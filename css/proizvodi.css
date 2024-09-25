@@ -322,7 +322,7 @@ nav:not(.nav-vert) {
 .proizvodi-content:hover img,
 .proizvodi-content:active img {
     transform: scale(1.1);
-    opacity: 0.5;
+    /* opacity: 0.5; */
     /* mask-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)); */
 }
 
@@ -366,11 +366,11 @@ nav:not(.nav-vert) {
 }
 
 .okov-submenu-li:hover {
-    background-color: #eee;
+    background-color: #9f1c38;
 }
 
 .okov-submenu-li:hover a {
-    color: #000 !important;
+    color: #eee !important;
 }
 
 .show {

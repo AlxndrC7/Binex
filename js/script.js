@@ -92,13 +92,11 @@ function playPause() {
   
 
   function submenuShow() {
-  let navOkovA = document.querySelector('.nav-vert-li-okov a');
   let okovSub = document.querySelector('.okov-submenu');
   let okovLi = document.querySelectorAll('.okov-submenu-li')
   if(okovSub.style.visibility='collapse') {
     okovSub.classList.toggle('show');
-    // navOkovA.setAttribute('href', 'okov.html')
-  okovSub.style.transition='0.4s';
+    okovSub.style.transition='0.4s';
   } else {
     okovLi.classList.toggle('hide');
     okovSub.classList.toggle('hide');
