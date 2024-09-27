@@ -294,17 +294,18 @@ nav:not(.nav-vert) {
     align-items: center;
     font-size: 16px;
     text-align: center;
-    width: 24%;
+    width: 22%;
     height: 250px;
     background-color: #fff;
     overflow: hidden;
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 .proizvodi-text {
     z-index: 2;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 .proizvodi-content img {
@@ -335,9 +336,6 @@ nav:not(.nav-vert) {
     width: 100%;
 }
 
-.okovzakapije-hover {
-
-}
 
 .proizvodi-content:hover .okovzakapije-hover {
     opacity: 1;
