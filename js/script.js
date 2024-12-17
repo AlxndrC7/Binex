@@ -34,7 +34,7 @@ const swiper = new Swiper('.swiper', {
     },
     centeredSlides: true,
     autoplay: {
-        delay: 600000,
+        delay: 70000,
       },
   
     // If we need pagination

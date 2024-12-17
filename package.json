@@ -1,0 +1,17 @@
+{
+  "name": "binex",
+  "version": "1.0.0",
+  "description": "Binex landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "node-sass  css/proizvodi.css css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:css"
+  },
+  "author": "Aleksandar Carevic",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
