@@ -4,9 +4,9 @@
   "description": "Binex landing page",
   "main": "index.js",
   "scripts": {
-    "watch:css": "node-sass  css/proizvodi.css css/style.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:css"
+    
+    "devserver": "live-server"
+    
   },
   "author": "Aleksandar Carevic",
   "license": "ISC",
@@ -15,3 +15,4 @@
     "npm-run-all": "^4.1.5"
   }
 }
+

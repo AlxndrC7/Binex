@@ -9,7 +9,7 @@ const fastore = document.querySelectorAll(".fa-store");
 
 window.addEventListener('scroll', function() {
   const currentScrollPos = window.scrollY;
-  if(currentScrollPos >= 700) {
+  if(currentScrollPos >= 700 & screen.width>=600) {
     nav.classList.add('sticky');
     nav.style.transition="0.4s";
   } else {
