@@ -21,6 +21,211 @@ html {
 }
 
 /************************/
+/****** MOBILE PHONE NAVIGATION ******/
+/************************/
+
+#nav-nohover {
+    z-index: 100;
+}
+
+.navbar-menu-nohover-container {
+    /* visibility: hidden; */
+    width: 20px;
+    height: 14px;
+    position: fixed;
+    top: 16px;
+    right: 12px;
+    z-index: 10;
+}
+
+.navbar-menu-nohover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.navbar-menu-nohover {
+    @media only screen and (min-width: 600px) and (hover:hover) {
+                visibility: hidden;
+            }
+}
+
+.navbar-checkbox {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    @media only screen and (max-width: 600px) {
+        visibility: visible;
+    }
+}
+
+.navbar-checkbox-span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 2px;
+    background-color: #9f1c38;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.navbar-checkbox-label:before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background-color: #9f1c38;
+    transition: all 0.2s linear;
+}
+
+.navbar-checkbox-label:hover:before {
+    top: -2px;
+}
+
+.navbar-checkbox-label:after {
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 2px;
+    background-color: #9f1c38;
+    transition: all 0.2s linear;
+}
+
+.navbar-checkbox-label:hover:after {
+    bottom: -2px;
+}
+
+.navbar-checkbox:checked ~ .navbar-checkbox-label:before {
+    transform: rotate(135deg);
+    top: 50%;
+}
+
+.navbar-checkbox:checked ~ .navbar-checkbox-label:after {
+    transform: rotate(-135deg);
+    top: 50%;
+}
+
+.navbar-checkbox:checked ~ .navbar-checkbox-span {
+    opacity: 0;
+}
+
+.navbar-checkbox:checked ~ .navbar-nohover {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(145%);
+}
+
+.navbar-nohover {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 68%;
+    height: 100vh;
+    background-image: linear-gradient(#aaaaaa, #ff7b7b);
+    z-index: 100;
+    transition: all 0.3s linear;
+}
+
+.navbar-nohover-hide {
+    transform: translateX(-145%);
+    opacity: 0;
+    visibility: collapse;
+}
+
+.navbar-nohover-show {
+    transform: translateX(145%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-submenu-nohover {
+    position: absolute;
+    top: 17%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+.navbar-submenu-nohover li {
+    margin: 20px 0;
+}
+
+.navbar-a-nohover {
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #9f1c38;
+}
+
+.proizvodi-submenu-nohover {
+    visibility: collapse;
+    display: none;
+    list-style: none;
+    transition: all 0.4s;
+}
+
+.proizvodi-submenu-nohover li {
+    margin: 5px 0;
+    transition: all 0.4s;
+}
+
+.submenu_item-nohover a:link,
+.submenu_item-nohover a:visited
+ {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4200c2;
+}
+
+.show-proizvodi-submenu-nohover {
+    visibility: visible !important;
+    display: block !important;
+    position: absolute;
+    margin-left: 5px;
+    width: max-content;
+    list-style: none;
+}
+
+.hide-proizvodi-submenu-nohover {
+    visibility: collapse;
+    display: none;
+}
+
+.menu_kontakt {
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+
+.moveDown-menu_kontakt {
+    transform: translateY(296px);
+}
+
+.moveUp-menu_kontakt {
+    transform: translateY(0);
+}
+
+/************************/
 /****** NAVIGATION ******/
 /************************/
 
@@ -35,7 +240,7 @@ html {
 }
 
 
-nav:not(.nav-vert) {
+nav:not(.nav-vert, .nav-vert-nohover) {
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -45,10 +250,67 @@ nav:not(.nav-vert) {
 
 .nav-logo {
     margin-left: 15px;
+    margin-top: 15px;
+
+    @media only screen and (max-width: 600px),
+    only screen and (hover:none) {
+        padding-top: 10px;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        margin:0;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+}
+
+.img-logo {
+    height: 80px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .img-logo {
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .img-logo {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .img-logo {
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .img-logo {
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 600px),
+        only screen and (hover:none) {
+    .img-logo {
+        height: 35px;
+    }
 }
 
 .navbar {
     font-size: 105%;
+    position: relative;
+
+    @media only screen and (max-width: 600px),
+            only screen and (hover:none) {
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+
 }
 
 .navbar ul {
@@ -62,11 +324,52 @@ nav:not(.nav-vert) {
 
 .navbar ul li:not(.submenu li, .fa-navbar li) {
     align-content: center;
-    margin: 0 50px !important;
-    margin: auto;
-    font-size: 70%;
+    margin: 0 50px;
+    font-size: 60%;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .navbar ul li:not(.submenu li, .fa-navbar li) {
+        margin: 0 35px;
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar ul li:not(.submenu li, .fa-navbar li) {
+        margin: 0 30px;
+        font-size: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    .navbar ul li:not(.submenu li, .fa-navbar li) {
+        margin: 0 35px;
+        font-size: 45%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    .navbar ul li:not(.submenu li, .fa-navbar li) {
+        margin: 0 25px;
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar ul li:not(.submenu li, .fa-navbar li) {
+        margin: 0 18px;
+        font-size: 38%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar ul li:not(.submenu li, .fa-navbar li) {
+        margin: 0 10px;
+        font-size: 38%;
+    }
 }
 
 .navbar ul li a {
@@ -76,7 +379,27 @@ nav:not(.nav-vert) {
 
 .navbar-a {
     position: relative;
+    cursor: pointer;
     padding: 10px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px),
+        only screen and (max-width: 1200px) {
+    .navbar-a {
+        padding: 5px 5px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-a {
+        padding: 3.5px 3.5px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-a {
+        padding: 2.5px 2.5px;
+    }
 }
 
 .navbar-a:before,
@@ -87,13 +410,31 @@ nav:not(.nav-vert) {
     height: 10px;
     background-color: transparent;
     transition: all 0.3s;
+
+    @media only screen and (max-width: 1200px) {
+            width: 6px;
+            height: 6px;
+    }
 }
+
 
 .navbar-a:before {
     top: -1.5px;
     left: -1.5px;
     border-top: 2.5px solid #9f1c38;
     border-left: 2.5px solid #9f1c38;
+
+    @media only screen and (max-width: 1200px) {
+            top: -0.5px;
+            left: -0.5px;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+    }
+
+    @media only screen and (min-width: 1201px) and (max-width: 1600px) {
+            border-top: 1.5px solid #ffffff;
+            border-left: 1.5px solid #ffffff;
+    }
 }
 
 .navbar-a:after {
@@ -101,6 +442,19 @@ nav:not(.nav-vert) {
     right: -1.5px;
     border-right: 2.5px solid #9f1c38;
     border-bottom: 2.5px solid #9f1c38;
+
+    @media only screen and (max-width: 1200px) {
+            bottom: -0.5px;
+            right: -0.5px;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+    }
+
+    @media only screen and (min-width: 1201px) and (max-width: 1600px) {
+            border-right: 1.5px solid #ffffff;
+            border-bottom: 1.5px solid #ffffff;
+    }
+    
 }
 
 .navbar-a:hover::before,
@@ -142,18 +496,21 @@ nav:not(.nav-vert) {
     cursor: pointer;
 }
 
-.submenu_item  {
+.submenu_item a {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     padding-left: 8px;
+    box-sizing: border-box;
+    cursor:pointer;
     position: relative;
 }
 
 .navbar .submenu_item a:hover,
 .navbar .submenu_item a:active {
     color: #fff;
+    cursor: pointer;
 }
 
 .navbar .submenu_item:before {
@@ -179,7 +536,48 @@ nav:not(.nav-vert) {
     
 
 .fa-navbar {
-    padding: 0 40px;
+    padding: 0 30px;
+}
+
+.fa-navbar 
+.fa-store, .fa-envelope, .fa-phone {
+    margin-right: 5px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .fa-navbar {
+        padding: 0;
+        margin-right: 10px;
+    }
+}
+
+.fa-navbar-nohover {
+
+    display: none;
+    margin-left: 5px;
+
+    @media only screen and (max-width: 600px),
+            only screen and (hover:none) {
+                display: inline-block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                font-size: 7px;
+                font-weight: 300;
+                list-style: none;
+                z-index: 10;
+            }
+}
+
+.menu-nohover {
+    display: none;
+}
+
+.fa-navbar-nohover 
+.fa-store,
+.fa-envelope,
+.fa-phone {
+    margin-right: 5px;
 }
 
 .fa-navbar li {
@@ -188,10 +586,25 @@ nav:not(.nav-vert) {
     text-transform: none;
     cursor:default;
     color: #fff;
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 12px;
+        font-weight: 100;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        font-size: 10px;
+        font-weight: 100;
+    }
+    
+    @media only screen and (max-width: 700px) {
+        font-size: 8px;
+        font-weight: 100;
+    }
 }
 
 .fa-phone {
-    font-size: 100%;
+    /* font-size: 100%; */
     color: #9f1c38;
     font-family:'Montserrat';
 }
@@ -199,13 +612,13 @@ nav:not(.nav-vert) {
 .fa-store {
     color: #9f1c38;
     margin-right: 10px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .fa-envelope {
     color: #9f1c38;
     margin-right: 10px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 /************************/
@@ -226,8 +639,26 @@ nav:not(.nav-vert) {
 /************************/
 
 #proizvodi {
-    margin: 150px 50px 0 100px;
+    margin-top: 5%;
     display: flex;
+    
+    @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+                margin-top: 8%;
+            }
+
+    @media only screen and (max-width: 1000px) {
+        display: inline-block;
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1000px) {
+                margin-top: 10%;
+            }
+
+    @media only screen and (hover:none) and (max-width: 1000px) {
+        margin-top: 15%;
+        /* display: inline-block; */
+    }
+
 }
 
 .nav-vert {
@@ -236,15 +667,71 @@ nav:not(.nav-vert) {
     border-radius: 0 30% 30% 0;
     background-color: #eee;
     line-height: 40px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;  
     overflow: hidden;
+    
+    @media only screen and (min-width: 1001px) and (max-width: 1400px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        /* display: none; */
+    }
+    
+    /* @media only screen and (min-width: 801px) and (max-width: 1000px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 800px) {
+        font-size: 12px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 10px;
+    } */
+
+}
+
+.nav-vert-nohover {
+    @media only screen and (min-width:1001px) {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 5%;
+    }
+}
+
+.nav-vert-submenu-nohover {
+    display: flex;
+    list-style: none;
+}
+
+.nav-vert-submenu-nohover li {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.nav-vert-submenu-nohover li a {
+    color: #333333;
+    font-weight: 200;
+    font-size: 14px;
 }
 
 .nav-vert-submenu {
     list-style: none;
     text-wrap: nowrap;
     width: 200px;
+
+    /* @media only screen and (hover:none) {
+        width: auto;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+
+    } */
 }
 
 .nav-vert-submenu a {
@@ -254,6 +741,10 @@ nav:not(.nav-vert) {
 .nav-vert-li {
     line-height: 2.5;
     border-bottom: 1px solid #252525;
+
+    @media only screen and (hover:none) {
+        border-bottom: none;
+    }
 }
 
 .nav-vert-li:hover {
@@ -268,6 +759,10 @@ nav:not(.nav-vert) {
     text-decoration: none;
     color: #000;
     padding-left: 10px;
+
+    @media only screen and (hover:none) {
+        padding: 0 5px;
+    }
 }
 
 .nav-vert-li a:hover {
@@ -277,13 +772,17 @@ nav:not(.nav-vert) {
 .proizvodi_article {
     width: 100%;
     height: 70vh;
-    margin-left: 40px;
+    margin-left: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     overflow-y:scroll;
-    border: 1px solid #afafaf;
+
+    @media only screen and (max-width: 1000px) {
+        width: auto;
+        margin: 5% 0;
+    }
 }
 
 
@@ -295,17 +794,39 @@ nav:not(.nav-vert) {
     font-size: 16px;
     text-align: center;
     width: 22%;
-    height: 250px;
+    height: 200px;
     background-color: #fff;
     overflow: hidden;
     margin: 10px 10px;
+
+    @media only screen and (max-width: 1000px) {
+        display: inline-block;
+        height: 170px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        width: 20%;
+    }
 }
 
 .proizvodi-text {
     z-index: 2;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 600;
     margin-top: 10px;
+
+    @media only screen and (max-width: 1400px) {
+        font-size: 12px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 10px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        font-size: 9px;
+    }
+
 }
 
 .proizvodi-content img {
@@ -313,6 +834,14 @@ nav:not(.nav-vert) {
     width: 100%;
     height: 75%;
     transition: all 0.5s;
+
+    @media only screen and (max-width: 1400px) {
+        height: 70%;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        height: 60%;
+    }
 }
 
 .proizvodi-content:hover,
@@ -336,14 +865,12 @@ nav:not(.nav-vert) {
     width: 100%;
 }
 
-
 .proizvodi-content:hover .okovzakapije-hover {
     opacity: 1;
     object-fit: contain;
     transition: all 0.5s;
     transform: scale(1.0);
 }
-
 
 /************************/
 /****** OKOV ******/

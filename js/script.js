@@ -34,7 +34,7 @@ const swiper = new Swiper('.swiper', {
     },
     centeredSlides: true,
     autoplay: {
-        delay: 70000,
+        delay: 10000,
       },
   
     // If we need pagination
@@ -76,15 +76,22 @@ function playPause() {
 }
 
 /************************/
-/****** PROIZVODI ARTICLE ******/
+/****** NAV VERT HIDE ******/
 /************************/
 
-// function MetalurgijaFn() {
-//   let img = document.createElement('img');
-//   img.src = "img/pexels-shockphoto-1381938.jpg";
-//   img.style.width="300px", height="300px";
-//   document.querySelector(".art1").appendChild(img);
-// }
+const navVert = document.querySelector('.nav-vert');
+
+window.addEventListener('resize', function() {
+  const screenW = window.innerWidth;
+  if(screenW <= 1000) {
+    window.alert("Hello world!");
+  //   // navVert.classList.add('hide');
+  //   navVert.style.display='none';
+  // } else {
+  //   // navVert.classList.remove('hide');
+  //   navVert.style.display='none';
+  }
+})
 
 /************************/
 /****** OKOV PROIZVODI ******/
@@ -93,12 +100,49 @@ function playPause() {
 
   function submenuShow() {
   let okovSub = document.querySelector('.okov-submenu');
-  let okovLi = document.querySelectorAll('.okov-submenu-li')
+  let okovLi = document.querySelectorAll('.okov-submenu-li');
+  
   if(okovSub.style.visibility='collapse') {
     okovSub.classList.toggle('show');
     okovSub.style.transition='0.4s';
-  } else {
+  } 
+  else {
     okovLi.classList.toggle('hide');
     okovSub.classList.toggle('hide');
   }
 }
+
+
+function submenuProizvodiShow() {
+
+  let submenu_proizvodi = document.querySelector('.proizvodi-submenu-nohover');
+  let menu_kontakt = document.querySelector('.menu_kontakt-nohover');
+
+  if (submenu_proizvodi.style.visibility='collapse') {
+    submenu_proizvodi.classList.toggle('show-proizvodi-submenu-nohover');
+    menu_kontakt.classList.toggle('moveDown-menu_kontakt')
+  }
+  else {
+    // submenu_proizvodi.style.display='none';
+    submenu_proizvodi.classList.toggle('hide-proizvodi-submenu-nohover');
+    menu_kontakt.classList.toggle('moveUp-menu_kontakt');
+  }
+}
+
+function closeNavbar() {
+
+  let navbar = document.querySelector('.navbar-nohover');
+  let checkbox = document.querySelector('.navbar-checkbox');
+
+  if (checkbox.checked = false) {
+  navbar.classList.toggle('navbar-nohover-show');
+  checkbox.setAttribute('checked',false);
+  } else {
+    navbar.classList.toggle('navbar-nohover-hide');
+    checkbox.setAttribute('checked',true);
+  }
+
+}
+
+
+  console.log(error);

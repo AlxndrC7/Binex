@@ -13,7 +13,37 @@
     <header>
         <nav id="nav">
             <div class="nav-logo">
-                <img class="img-logo" src="img/binex logo2.png" alt="binex logo" style="width: 250px; height: 80px;">
+                <img class="img-logo" src="img/binex logo2.png" alt="binex logo">
+            </div>
+            <div id="nav-nohover">
+                <div class="navbar-menu-nohover-container">
+                    <div class="navbar-menu-nohover">
+                        <input class="navbar-checkbox" type="checkbox" name="mobile-menu" id="mobile-menu">
+                            <label class="navbar-checkbox-label" for="mobile-menu"></label>
+                            <span class="navbar-checkbox-span"></span>
+                        </input>
+                        <div class="navbar-nohover">
+                            <ul class="navbar-submenu-nohover">
+                                <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna-nohover navbar-a-nohover" href="#">Početna</a></li>
+                                <li class="menu_onama navbar_ul_li"><a class="navbar_onama-nohover navbar-a-nohover" href="#o_nama" onclick="closeNavbar()">O nama</a></li>
+                                <li class="menu_proizvodi navbar_ul_li" onclick="submenuProizvodiShow()"><a class="navbar_proizvodi-nohover navbar-a-nohover" >Proizvodi</a>
+                                    <ul class="proizvodi-submenu-nohover" style="visibility:collapse;">
+                                        <li class="submenu_item-nohover"><a href="metalurgija.html">Metalurgija</a></li>
+                                        <li class="submenu_item-nohover"><a href="limovi.html">Limovi</a></li>
+                                        <li class="submenu_item-nohover"><a href="prohrom.html">Prohrom (inox)</a></li>
+                                        <li class="submenu_item-nohover"><a href="okov.html">Okov</a></li>
+                                        <li class="submenu_item-nohover"><a href="akuel.html">Aku i Elektro alat</a></li>
+                                        <li class="submenu_item-nohover"><a href="busilice.html">Pribor za bušilice</a></li>
+                                        <li class="submenu_item-nohover"><a href="abrazivi.html">Abrazivi</a></li>
+                                        <li class="submenu_item-nohover"><a href="alat.html">Ručni alat</a></li>
+                                        <li class="submenu_item-nohover"><a href="boje.html">Boje i lakovi</a></li>
+                                        <li class="submenu_item-nohover"><a href="htz.html">HTZ oprema</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_kontakt menu_kontakt-nohover navbar_ul_li"><a class="navbar_kontakt-nohover navbar-a-nohover" href="#kontakt">Kontakt</a></li>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="navbar">
                 <ul class="navbar-submenu">
@@ -35,12 +65,20 @@
                     </li>
                     <li class="menu_kontakt navbar_ul_li"><a class="navbar_kontakt navbar-a" href="#kontakt">Kontakt</a></li>
                     <div class="fa-navbar">
-                        <li class="tel">&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veleprodaja Subotička 1 &emsp;&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 140</li>
-                        <li class="tel">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
-                        <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8 &nbsp;<i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                        <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                        <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                        <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                        <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
                         <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
                     </div>
                 </ul>
+            </div>
+            <div class="fa-navbar-nohover">
+                <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
             </div>
         </nav>
 
