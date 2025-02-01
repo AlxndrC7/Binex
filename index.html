@@ -26,7 +26,7 @@
                         </input>
                         <div class="navbar-nohover">
                             <ul class="navbar-submenu-nohover">
-                                <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna-nohover navbar-a-nohover" href="#">Početna</a></li>
+                                <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna-nohover navbar-a-nohover" href="index.html">Početna</a></li>
                                 <li class="menu_onama navbar_ul_li"><a class="navbar_onama-nohover navbar-a-nohover" href="#o_nama" onclick="closeNavbar()">O nama</a></li>
                                 <li class="menu_proizvodi navbar_ul_li" onclick="submenuProizvodiShow()"><a class="navbar_proizvodi-nohover navbar-a-nohover" >Proizvodi</a>
                                     <ul class="proizvodi-submenu-nohover" style="visibility:collapse;">
@@ -35,7 +35,7 @@
                                         <li class="submenu_item-nohover"><a href="prohrom.html">Prohrom (inox)</a></li>
                                         <li class="submenu_item-nohover"><a href="okov.html">Okov</a></li>
                                         <li class="submenu_item-nohover"><a href="akuel.html">Aku i Elektro alat</a></li>
-                                        <li class="submenu_item-nohover"><a href="busilice.html">Pribor za bušilice</a></li>
+                                        <li class="submenu_item-nohover"><a href="pribor_za_busilice.html">Pribor za bušilice</a></li>
                                         <li class="submenu_item-nohover"><a href="abrazivi.html">Abrazivi</a></li>
                                         <li class="submenu_item-nohover"><a href="alat.html">Ručni alat</a></li>
                                         <li class="submenu_item-nohover"><a href="boje.html">Boje i lakovi</a></li>
@@ -58,7 +58,7 @@
                             <li class="submenu_item"><a href="prohrom.html">Prohrom (inox)</a></li>
                             <li class="submenu_item"><a href="okov.html">Okov</a></li>
                             <li class="submenu_item"><a href="akuel.html">Aku i Elektro alat</a></li>
-                            <li class="submenu_item"><a href="busilice.html">Pribor za bušilice</a></li>
+                            <li class="submenu_item"><a href="pribor_za_busilice.html">Pribor za bušilice</a></li>
                             <li class="submenu_item"><a href="abrazivi.html">Abrazivi</a></li>
                             <li class="submenu_item"><a href="alat.html">Ručni alat</a></li>
                             <li class="submenu_item"><a href="boje.html">Boje i lakovi</a></li>
@@ -147,7 +147,8 @@
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </div>
-              <div class="swiper-slide" style="z-index: 5;"><img class="swiper-slide-img-5" src="img/pexels-pixabay-162553.jpg" alt="">
+              <div class="swiper-slide" style="z-index: 5;">
+                <i class="fa-solid fa-screwdriver-wrench fa-screwdriver-wrench-mobile" style="color: #9f1c38;"></i>
                 <div class="swiper-text">
                     <h2>Ručni alat</h2>
                     <p>What is Lorem Ipsum?
@@ -181,16 +182,21 @@
                 </div>
             </div>
             <div class="swiper-slide" style="z-index: 2;">
-                <img class="swiper-slide-img-burgije" src="img/burgije.jpeg" alt="" style="object-fit: cover; width:50%;">
+                <div class="swiper-slide-img-burgije-container">
+                    <img class="swiper-slide-img-burgije" src="img/burgija1.jpg" alt="" style="object-fit: contain">
+                </div>
                 <div class="swiper-text">
                     <h2>Pribor za bušilice</h2>
                     <p>What is Lorem Ipsum?
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </div>
-            <div class="swiper-slide" style="z-index: 1;"><img class="swiper-slide-img-4" src="img/pexels-watorious-2381463.jpg" alt="">
+            <div class="swiper-slide" style="z-index: 1;">
+                <div class="swiper-slide-img-4-container">
+                    <img class="swiper-slide-img-4" src="img/welding-man2.png" alt="" style="object-fit: contain">
+                </div>
                 <div class="swiper-text">
-                    <h2>Oprema za zavarivanje</h2>
+                    <h2>Pribor za zavarivanje</h2>
                     <p>What is Lorem Ipsum?
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
@@ -249,53 +255,53 @@
                 <a href="okov.html"><div class="proizvodi-text">OKOV</div></a>
             </article>
             <article class="proizvodi-content">
-                <div class="img-aku-el-container">
+                <div class="img-aku-el-container" href="akuel.html">
                     <img class="img-aku-el" src="img/binex/brendovi/bosch1.png" alt="" style="width: fit-content; height: 29px;">
                     <img class="img-aku-el" src="img/binex/brendovi/makita2.png" alt="" style="width: fit-content; height: 50px;">
                     <img class="img-aku-el" src="img/binex/brendovi/ingco.png" alt="" style="width: fit-content; height: 65px;">
                 </div>
-                <a href="#"><div class="proizvodi-text">AKU i ELEKTRO ALAT</div></a>
+                <a href="akuel.html"><div class="proizvodi-text">AKU i ELEKTRO ALAT</div></a>
             </article>
             <article class="proizvodi-content" style="border-right: none;">
-                <img src="img/burgije.jpeg" alt="">
-                <a href="#"><div class="proizvodi-text">PRIBOR ZA BUŠILICE</div></a>
+                <img href="pribor_za_busilice.html" src="img/burgija1.jpg" alt="" style="object-fit: contain;">
+                <a href="pribor_za_busilice.html"><div class="proizvodi-text">PRIBOR ZA BUŠILICE</div></a>
             </article>
             <article class="proizvodi-content" style="border-top: 0.4px solid #00000042;">
-                <!-- <img src="" alt=""> -->
-                <a href="#"><div class="proizvodi-text">PROHROM (INOX)</div></a>
+                <a href="prohrom.html"><div class="proizvodi-text">PROHROM (INOX)</div></a>
                 <video id="myvideo" src="img/binex/prohrom.mp4" muted loop onmouseover="playPause()" onmouseleave="playPause()" style="object-fit: cover; height: 100%; width: 100%"></video>
             </article>
             <article class="proizvodi-content" style="border-top: 0.4px solid #00000042;">
-                <div class="img-abrazivi-container">
+                <div class="img-abrazivi-container" href="abrazivi.html">
                     <img src="img/binex/brendovi/klingspor.jpeg" alt="" style="width: fit-content; height: 70px;">
                     <img src="img/binex/brendovi/smirdex1.png" alt="" style="width: fit-content; height: 23px;">
                     <img src="img/binex/brendovi/tyrolit1.png" alt="" style="width: fit-content; height: 40px;">
                     <img src="img/klingsporproducts.jpeg" alt="" style="height: 118px;">
                 </div>
-                <a href="#"><div class="proizvodi-text">ABRAZIVI</div></a>
+                <a href="abrazivi.html"><div class="proizvodi-text">ABRAZIVI</div></a>
             </article>
             <article class="proizvodi-content" style="border-top: 0.4px solid #00000042;">
-                <div class="img-rucnialat-container">
+                <div class="img-rucnialat-container" href="alat.html">
                     <img src="img/binex/brendovi/richman.png" alt="" style="width: fit-content; height: 47px;">
                     <img src="img/binex/brendovi/ingco.png" alt="" style="width: fit-content; height: 65px;">
                 </div>
-                <a href="#"><div class="proizvodi-text">RUČNI ALAT</div></a>
+                <a href="alat.html"><div class="proizvodi-text">RUČNI ALAT</div></a>
             </article>
             <article class="proizvodi-content" style="border-top: 0.4px solid #00000042;">
-                <div class="img-boje-container">
-                    <img src="img/binex/brendovi/irkom.png" alt="" style="width: fit-content; height: 38px;">
+                <div class="img-boje-container" href="boje.html">
+                    <i class="fa-solid fa-paint-roller"></i>
+                    <!-- <img src="img/binex/brendovi/irkom.png" alt="" style="width: fit-content; height: 38px;">
                     <img src="img/binex/brendovi/cool.png" alt="" style="width: fit-content; height: 55px;">
                     <img src="img/binex/brendovi/hemax.png" alt="" style="width: fit-content; height: 65px;">
                     <img src="img/binex/brendovi/beorol.png" alt="" style="width: fit-content; height: 60px;">
-                    <img src="img/binex/brendovi/ceresit.png" alt="" style="width: fit-content; height: 22px;">
+                    <img src="img/binex/brendovi/ceresit.png" alt="" style="width: fit-content; height: 22px;"> -->
                 </div>
-                <a href="#"><div class="proizvodi-text">BOJE I LAKOVI</div></a>
+                <a href="boje.html"><div class="proizvodi-text">BOJE I LAKOVI</div></a>
             </article>
             <article class="proizvodi-content" style="border-right: none; border-top: 0.4px solid #00000042;">
-                <div class="img-htz-container">
-                <img src="img/htzoprema3.jpeg" alt="">
+                <div class="img-htz-container" href="htz.html">
+                <img src="img/htz-oprema.png" alt="">
                 </div>
-                <a href="#"><div class="proizvodi-text">HTZ OPREMA</div></a>
+                <a href="htz.html"><div class="proizvodi-text">HTZ OPREMA</div></a>
             </article>
         </div>
     </section>

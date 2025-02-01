@@ -20,6 +20,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 /************************/
 /****** MOBILE PHONE NAVIGATION ******/
 /************************/
@@ -642,8 +646,20 @@ nav:not(.nav-vert, .nav-vert-nohover) {
     margin-top: 5%;
     display: flex;
     
+    @media only screen and (hover:none) and (min-width: 1400px) {
+        margin-top: 10%;
+    }
+
+    @media only screen and (hover:none) and (min-width: 1200px) and (max-width: 1400px) {
+        margin-top: 12%;
+    }
+
     @media only screen and (min-width: 1001px) and (max-width: 1200px) {
                 margin-top: 8%;
+            }
+
+    @media only screen and (hover:none) and (min-width: 1001px) and (max-width: 1200px) {
+                margin-top: 15%;
             }
 
     @media only screen and (max-width: 1000px) {
@@ -659,24 +675,33 @@ nav:not(.nav-vert, .nav-vert-nohover) {
         /* display: inline-block; */
     }
 
+    @media only screen and (max-width: 500px) {
+        margin-top: 20%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        margin-top: 25%;
+    }
+
 }
 
 .nav-vert {
     width: fit-content;
     height: fit-content;
+    margin-top: 30px;
     border-radius: 0 30% 30% 0;
-    background-color: #eee;
+    background-image: linear-gradient(90deg, #9f1d3875, #ffffff);
     line-height: 40px;
     font-size: 16px;
     font-weight: 300;  
     overflow: hidden;
     
-    @media only screen and (min-width: 1001px) and (max-width: 1400px) {
+    @media only screen and (min-width: 1000px) and (max-width: 1400px) {
         font-size: 14px;
     }
 
-    @media only screen and (max-width: 1000px) {
-        /* display: none; */
+    @media only screen and (max-width: 999px) {
+        opacity: 0;
     }
     
     /* @media only screen and (min-width: 801px) and (max-width: 1000px) {
@@ -694,9 +719,12 @@ nav:not(.nav-vert, .nav-vert-nohover) {
 }
 
 .nav-vert-nohover {
-    @media only screen and (min-width:1001px) {
-        display: none;
+    @media only screen and (min-width:1000px) {
+        position: absolute;
+        top: 15%;
     }
+
+    @media only screen 
 
     @media only screen and (max-width: 600px) {
         margin-top: 5%;
@@ -740,7 +768,6 @@ nav:not(.nav-vert, .nav-vert-nohover) {
 
 .nav-vert-li {
     line-height: 2.5;
-    border-bottom: 1px solid #252525;
 
     @media only screen and (hover:none) {
         border-bottom: none;
@@ -771,7 +798,7 @@ nav:not(.nav-vert, .nav-vert-nohover) {
 
 .proizvodi_article {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     margin-left: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -781,7 +808,7 @@ nav:not(.nav-vert, .nav-vert-nohover) {
 
     @media only screen and (max-width: 1000px) {
         width: auto;
-        margin: 5% 0;
+        margin: 5% 0 0 0;
     }
 }
 
@@ -790,30 +817,42 @@ nav:not(.nav-vert, .nav-vert-nohover) {
     position: relative;
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
     font-size: 16px;
     text-align: center;
     width: 22%;
-    height: 200px;
+    height: 32%;
     background-color: #fff;
     overflow: hidden;
     margin: 10px 10px;
 
+    @media only screen and (min-width: 1200px) {
+
+    }
+
     @media only screen and (max-width: 1000px) {
         display: inline-block;
-        height: 170px;
+        height: 30%;
+        width: 30%;
     }
 
     @media only screen and (max-width: 700px) {
-        width: 20%;
+        width: 25%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        margin: 5px 10px;
+        width: 40% !important;
+        /* height: 140px; */
     }
 }
 
 .proizvodi-text {
     z-index: 2;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 5px;
 
     @media only screen and (max-width: 1400px) {
         font-size: 12px;
@@ -829,14 +868,25 @@ nav:not(.nav-vert, .nav-vert-nohover) {
 
 }
 
-.proizvodi-content img {
+.proizvodi-text-opis {
+    font-size: 8px;
+    font-weight: 400;
+    margin-top: 5px;
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 10px;
+    }
+}
+
+.proizvodi-content img,
+.proizvodi-content i {
     object-fit: contain;
     width: 100%;
-    height: 75%;
+    height: 60%;
     transition: all 0.5s;
 
     @media only screen and (max-width: 1400px) {
-        height: 70%;
+        height: 60%;
     }
 
     @media only screen and (max-width: 1200px) {
@@ -849,12 +899,12 @@ nav:not(.nav-vert, .nav-vert-nohover) {
     cursor: pointer;
 }
 
-.proizvodi-content:hover img,
+/* .proizvodi-content:hover img,
 .proizvodi-content:active img {
-    transform: scale(1.1);
+    transform: scale(1.1); */
     /* opacity: 0.5; */
-    /* mask-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)); */
-}
+    /* mask-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+} */
 
 .okovzakapije-hover {
     opacity: 0;

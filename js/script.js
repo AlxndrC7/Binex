@@ -34,7 +34,7 @@ const swiper = new Swiper('.swiper', {
     },
     centeredSlides: true,
     autoplay: {
-        delay: 10000,
+        delay: 100000,
       },
   
     // If we need pagination
@@ -75,23 +75,6 @@ function playPause() {
   }
 }
 
-/************************/
-/****** NAV VERT HIDE ******/
-/************************/
-
-const navVert = document.querySelector('.nav-vert');
-
-window.addEventListener('resize', function() {
-  const screenW = window.innerWidth;
-  if(screenW <= 1000) {
-    window.alert("Hello world!");
-  //   // navVert.classList.add('hide');
-  //   navVert.style.display='none';
-  // } else {
-  //   // navVert.classList.remove('hide');
-  //   navVert.style.display='none';
-  }
-})
 
 /************************/
 /****** OKOV PROIZVODI ******/
@@ -144,5 +127,3 @@ function closeNavbar() {
 
 }
 
-
-  console.log(error);

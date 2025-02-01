@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku i Elektro</title>
+    <link rel="stylesheet" href="css/proizvodi.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <nav id="nav">
+            <div class="nav-logo">
+                <img class="img-logo" src="img/binex logo2.png" alt="binex logo">
+            </div>
+            <div id="nav-nohover">
+                <div class="navbar-menu-nohover-container">
+                    <div class="navbar-menu-nohover">
+                        <input class="navbar-checkbox" type="checkbox" name="mobile-menu" id="mobile-menu">
+                            <label class="navbar-checkbox-label" for="mobile-menu"></label>
+                            <span class="navbar-checkbox-span"></span>
+                        </input>
+                        <div class="navbar-nohover">
+                            <ul class="navbar-submenu-nohover">
+                                <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna-nohover navbar-a-nohover" href="#">Početna</a></li>
+                                <li class="menu_onama navbar_ul_li"><a class="navbar_onama-nohover navbar-a-nohover" href="#o_nama" onclick="closeNavbar()">O nama</a></li>
+                                <li class="menu_proizvodi navbar_ul_li" onclick="submenuProizvodiShow()"><a class="navbar_proizvodi-nohover navbar-a-nohover" >Proizvodi</a>
+                                    <ul class="proizvodi-submenu-nohover" style="visibility:collapse;">
+                                        <li class="submenu_item-nohover"><a href="metalurgija.html">Metalurgija</a></li>
+                                        <li class="submenu_item-nohover"><a href="limovi.html">Limovi</a></li>
+                                        <li class="submenu_item-nohover"><a href="prohrom.html">Prohrom (inox)</a></li>
+                                        <li class="submenu_item-nohover"><a href="okov.html">Okov</a></li>
+                                        <li class="submenu_item-nohover"><a href="akuel.html">Aku i Elektro alat</a></li>
+                                        <li class="submenu_item-nohover"><a href="pribor_za_busilice.html">Pribor za bušilice</a></li>
+                                        <li class="submenu_item-nohover"><a href="abrazivi.html">Abrazivi</a></li>
+                                        <li class="submenu_item-nohover"><a href="alat.html">Ručni alat</a></li>
+                                        <li class="submenu_item-nohover"><a href="boje.html">Boje i lakovi</a></li>
+                                        <li class="submenu_item-nohover"><a href="htz.html">HTZ oprema</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_kontakt menu_kontakt-nohover navbar_ul_li"><a class="navbar_kontakt-nohover navbar-a-nohover" href="#kontakt">Kontakt</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-submenu">
+                    <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna navbar-a" href="index.html">Početna</a></li>
+                    <li class="menu_onama navbar_ul_li"><a class="navbar_onama navbar-a" href="index.html#o_nama">O nama</a></li>
+                    <li class="menu_proizvodi navbar_ul_li"><a class="navbar_proizvodi navbar-a" href="proizvodi.html">Proizvodi</a>
+                        <ul class="submenu">
+                            <li class="submenu_item"><a href="metalurgija.html">Metalurgija</a></li>
+                            <li class="submenu_item"><a href="limovi.html">Limovi</a></li>
+                            <li class="submenu_item"><a href="okov.html">Okov</a></li>
+                            <li class="submenu_item"><a href="akuel.html">Aku i Elektro alat</a></li>
+                            <li class="submenu_item"><a href="pribor_za_busilice.html">Pribor za bušilice</a></li>
+                            <li class="submenu_item"><a href="prohrom.html">Prohrom (inox)</a></li>
+                            <li class="submenu_item"><a href="abrazivi.html">Abrazivi</a></li>
+                            <li class="submenu_item"><a href="alat.html">Ručni alat</a></li>
+                            <li class="submenu_item"><a href="boje.html">Boje i lakovi</a></li>
+                            <li class="submenu_item"><a href="htz.html">HTZ oprema</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_kontakt navbar_ul_li"><a class="navbar_kontakt navbar-a" href="#kontakt">Kontakt</a></li>
+                    <div class="fa-navbar">
+                        <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                        <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                        <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                        <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                        <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="fa-navbar-nohover">
+                <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
+            </div>
+        </nav>
+
+        <section id="proizvodi">
+            <nav class="nav-vert-nohover">
+                <ul class="nav-vert-submenu-nohover">
+                    <li class="nav-vert-li"><a href="proizvodi.html">Proizvodi &rightarrow;</a></li>
+                    <li class="nav-vert-li" style="background-color: #9f1c38"><a style="color: #eee;">Aku i elektro</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="nav-vert">
+                <ul class="nav-vert-submenu">
+                    <li class="nav-vert-li"><a href="metalurgija.html">Metalurgija</a></li>
+                    <li class="nav-vert-li"><a href="limovi.html">Limovi</a></li>
+                    <li class="nav-vert-li nav-vert-li-okov" onclick="submenuShow()" ><a href="okov.html">Okov</a>
+                        <ul class="okov-submenu">
+                            <li class="okov-submenu-li"><a href="brave.html">Brave</a></li>
+                            <li class="okov-submenu-li"><a href="cilindri.html">Cilindri</a></li>
+                            <li class="okov-submenu-li"><a href="katanci.html">Katanci</a></li>
+                            <li class="okov-submenu-li"><a href="kvake.html">Kvake</a></li>
+                            <li class="okov-submenu-li"><a href="reze.html">Reze</a></li>
+                             <li class="okov-submenu-li"><a href="kliznekapije.html" style="text-wrap: wrap; line-height: normal;">Klizne kapije</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-vert-li"><a style="color: #eee; background-color:#9f1c38;">Aku i Elektro</a></li>
+                    <li class="nav-vert-li"><a href="pribor_za_busilice.html">Pribor za bušilice</a></li>
+                    <li class="nav-vert-li"><a href="prohrom.html">Prohrom (inox)</a></li>
+                    <li class="nav-vert-li"><a href="abrazivi.html">Abrazivi</a></li>
+                    <li class="nav-vert-li"><a href="alat.html">Ručni alat</a></li>
+                    <li class="nav-vert-li"><a href="boje.html">Boje i lakovi</a></li>
+                    <li class="nav-vert-li"><a href="htz.html">HTZ oprema</a></li>
+                </ul>
+            </nav>
+
+            <div class="proizvodi_article">
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/CAGLI1151.jpg" alt=""><p class="proizvodi-text">AKU BRUSILICA INGCO 115MM CAGLI1151</p><p class="proizvodi-text-opis">Napon: 20V <br>Broj obrtaja: 8500/min <br>Prečnik diska: 115mm <br><br> <br><br></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/AG10108-5 BRUSILICA SA POT. 1010W:125MM INGCO.jpg" alt=""><p class="proizvodi-text">EL. BRUSILICA SA POT. 1010W/125MM INGCO AG10108-5</p><p class="proizvodi-text-opis">Napon: 220-240V~50/60Hz<br>Ulazna snaga: 1010W<br>Broj obrtaja bez opterećenja: 5000-12000rpm<br>Prečnik brusne ploče: 125mm<br>Navoj osovine: M14</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/AG130018 BRUSILICA UGAONA 1300W:125MM INGCO.jpg" alt=""><p class="proizvodi-text">EL. BRUSILICA UGAONA 1300W/125MM INGCO AG130018</p><p class="proizvodi-text-opis">Napon:220-240V~50/60Hz<br>Ulazna snaga:1300W<br> Broj obrtaja bez opteređenja:12000rpm<br>Prečnik brusne ploče:125mm<br>Navoj osovine: M14<br></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/AG900285 BRUSILICA SA POT.900W:125MM INGCO.jpg" alt=""><p class="proizvodi-text">EL. BRUSILICA SA POT. 900W/125MM INGCO AG900285</p><p class="proizvodi-text-opis">Napon: 220-240V~50/60Hz<br>Ulazna snaga: 900W<br>Broj obrtaja bez opterećenja: 5000-11000rpm<br>Prečnik brusne ploče: 125mm<br>Navoj osovine: M14<br>Podešavanje promenljive brzine</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/AG220018 BRUSILICA UGAONA 2200W INGCO.jpg" alt=""><p class="proizvodi-text">EL. BRUSILICA UGAONA 2200W/230MM INGCO AG220018</p><p class="proizvodi-text-opis">Napon: 220-240V~50/60Hz<br>Ulazna snaga: 2200W<br>Broj obrtaja bez opterećenja: 6600rpm<br>Prečnik brusne ploče: 230mm<br>Navoj osovine: M14<br></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/AG75028 BRUSILICA UGAONA 750W:115MM INGCO.jpg" alt=""><p class="proizvodi-text">EL. BRUSILICA UGAONA 750W/115MM INGCO AG75028</p><p class="proizvodi-text-opis">Napon: 220-240V~50/60Hz<br>Ulazna snaga: 750W<br>Broj obrtaja bez opterećenja: 12000rpm<br>Prečnik brusne ploče: 115mm<br>Navoj osovine: M14</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/AG90028 BRUSILICA UGAONA 900W:125MM INGCO.jpg" alt=""><p class="proizvodi-text">EL. BRUSILICA UGAONA 900W/125MM INGCO AG90028</p><p class="proizvodi-text-opis">Napon: 220-240V~50/60Hz<br>Ulazna snaga: 900W<br>Broj obrtaja bez opterećenja: 12000rpm<br>Prečnik brusne ploče: 125mm<br>Navoj osovine: M14</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/CDLI20011.jpg" alt=""><p class="proizvodi-text">AKU BUŠILICA INGCO CDLI20011</p><p class="proizvodi-text-opis">Voltaža:20V<br>Broj obrtaja bez opterećenja:0-400/0-1500rpm<br>Max obrtni moment:45Nm<br>Kapacitet glave:0.8-10mm<br>Podešavanje obrtnog momenta:15+1<br>Mehanički 2 brzinski prenos<br>20V Lithium-Ion 1.5Ah baterija<br>1 kom baterije<br>1 kom brzi punjač<br>Integrisano radno svetlo<br>LED indikator snage baterije</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/CKLI1201.jpg" alt=""><p class="proizvodi-text">AKU ODVIJAČ+BUŠILICA SET INGCO CKLI1201</p><p class="proizvodi-text-opis">Lithium-ion bežična bušilica<br>Lithium-ion udarni odvijač<br>2 kom – 1,5Ah baterija<br>1 kom punjač</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/CRHLI2201.jpg" alt=""><p class="proizvodi-text">AKU HAMER INGCO CRHLI2201</p><p class="proizvodi-text-opis">Napon: 20V<br>Broj obrtaja bez opterećenja: 0-1350/min<br>Broj udara bez opterećenja: 0-4700bpm<br>Snaga udara: 1.5J<br>Max kapacitet bušenja: fi22 u betonu<br>Integrisano radno svetlo<br>SDS plus prihvat<br>3 kom burgija i 1 kom dleta</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/CRHLI22012.jpg" alt=""><p class="proizvodi-text">AKU HAMER+TORBA SET INGCO CRHLI22012</p><p class="proizvodi-text-opis">Napon: 20V<br>Broj obrtaja bez opterećenja: 0-1350/min<br>Broj udara bez opterećenja: 0-4700bpm<br>Snaga udara: 1.5J<br>Max kapacitet bušenja: fi22 u betonu<br>Integrisano radno svetlo<br>SDS plus prihvat<br>20V Lithium-Ion 4.0Ah baterija</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/CIDLI12202E AKU UDARNA BUŠILICA 20NM SUPER INGCO.png" alt=""><p class="proizvodi-text">AKU UDARNA BUŠILICA 20NM SUPER INGCO CIDLI12202E</p><p class="proizvodi-text-opis">Napon: 12V.<br>Brzina bez opterećenja: 400/0-1500rpm.<br>Maksimalna brzina udarca: 22500 udaraca u minuti.<br>Maksimalni obrtni moment: 20Nm.<br>Plastična glava.<br>Kapacitet glave: 0.8-10mm.</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/CIWLI2001.jpg" alt=""><p class="proizvodi-text">INGCO AKU UDARNI ODVIJAČ CIWLI2001</p><p class="proizvodi-text-opis">Napon:20V<br>Četvrtast prihvat udarnog odvijača:1/2"<br>Broj obrtaja bez opterećenja:0-1300/0-2100/min <br>Broj udara bez opterećenja 2000/0-3300bpm<br>Max obrtni moment:300NM<br>20V Lithium-Ion 2.0Ah baerija<br>2 kom baterija<br>1 kom 1Hr punjač<br>Napon punjenja:110V-240V~50/60Hz<br>Integrisano radno svetlo<br>LED indikator snage baterije</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/FBLI20011.jpg" alt=""><p class="proizvodi-text">BATERIJA LITHIUM-JON 2.0AH INGCO FBLI20011</p><p class="proizvodi-text-opis">Napon: 20V<br>LED indikator snage baterije<br>Jedna Lithium-Ion 2.0Ah baterija odgovara svim P20S različitim alatima</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/FBLI2002.jpeg" alt=""><p class="proizvodi-text">BATERIJA LITHIUM-JON 4.0AH INGCO FBLI2002</p><p class="proizvodi-text-opis">Napon: 20V<br>Lithium-Jon 4.0Ah baterija<br>LED indikator snage baterije<br>Odgovara za P20S različite alate</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/RS3208 BRUSILICA ROTACIONA 320W INGCO.jpg" alt=""><p class="proizvodi-text">BRUSILICA ROTACIONA 320W INGCO RS3208</p><p class="proizvodi-text-opis">Napon: 220-240V~50/60Hz<br>Ulazna snaga: 320W<br>Broj obrtaja bez opterećenja: 12000rpm<br>Prečnik brusne osnove: 125mm<br>5 kom brusnog papira<br>1 set ugljeničnih četkica</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/ED500282 BUŠILICA ELEKTRIČNA 500W INGCO.jpg" alt=""><p class="proizvodi-text">EL. BUŠILICA 500W INGCO ED500282</p><p class="proizvodi-text-opis">Napon električne bušilice: 220-240V~50/60Hz<br>Ulazna snaga: 500W<br>Broj obrtaja bez opterećenja: 0-3300rpm<br>Kapacitet glave električne bušilice:1.0-10mm<br>Promenljiva brzina<br>Prekidač za smer napred/nazad</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/ID6808 UDARNA BUŠILICA 680W INGCO.jpg" alt=""><p class="proizvodi-text">BUŠILICA UDARNA 680W INGCO ID6808</p><p class="proizvodi-text-opis">Broj obrtaja: 0-3000rpm Max<br>Promenljiva brzina<br>Napon: 220-240V~50/60Hz<br>Kapacitet bušenja: 13mm<br>Funkcija čekića<br>Ulazna snaga: 680W<br>Prekidač za smer napred/nazad</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/ID8508-2 UDARNA BUŠILICA 850W INGCO.jpg" alt=""><p class="proizvodi-text">BUŠILICA UDARNA 850W INGCO ID8508-2</p><p class="proizvodi-text-opis">Napon:220-240V~50/60Hz<br>Ulazna snaga: 850W<br>Broj obrtaja bez opterećenja: 0-2700rpm<br>Kapacitet glave2-13mm<br>Glava bez ključa<br>Promenljiva brzina<br>Prekidač za smer napred/nazad<br>Funkcija čekića</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/PDB15006 HAMER SDS MAX 1500W INGCO.jpg" alt=""><p class="proizvodi-text">HAMER SDS MAX 1500W INGCO PDB15006</p><p class="proizvodi-text-opis">Napon: 220-240V~50/60Hz<br>Ulazna snaga: 1500W<br>Broj udara bez opterećenja: 1000-1900bmp<br>Sila udara: 6-25J<br>Anti-vibracioni sistem<br>Auto-stop<br>Ugljenične četkice<br>Konstantna elektronska snaga<br>Sistem zaključavanja dleta<br>10 Kgs rušilac</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/RH16008 HAMER SDS-MAX 1600W INGCO.jpg" alt=""><p class="proizvodi-text">HAMER SDS MAX 1600W INGCO RH16008</p><p class="proizvodi-text-opis">Napon:220-240V~50/60Hz<br>Ulazna snaga: 1600W<br>Broj obrtaja bez opterećenja: 550rpm<br>Broj udara bez opterećenja: 3850bpm<br>Snaga udara: 8.0J<br>Max kapacitet bušenja: Beton: 38mm<br>Osnova prihvata: 100mm<br>Antivibracioni sistem</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/BJ9508 KEKSERICA 950W INGCO.jpg" alt=""><p class="proizvodi-text">KEKSERICA 950W INGCO BJ9508</p><p class="proizvodi-text-opis">Napon: 220-240V - 50/60Hz<br>Ulazna snaga: 950W<br>Broj obrtaja bez opterećenja: 11000rpm<br>Prečnik lista testere: 100mm<br>15 kom keks tiple</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/GSR 12V-30 AKU BUŠILICA:ODVRTAČ BOSCH.jpg" alt=""><p class="proizvodi-text">BOSCH AKU BUŠILICA-ODVRTAČ GSR 12V-30</p><p class="proizvodi-text-opis">Napon: 12 V<br>Akumulator: 2 x 2,0 Ah<br>Obrtni moment: 30 / 18 Nm<br>Broj obrtaja: 0 - 1.600 min-1<br>BRUSHLESS motor bez četkica<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/BOSCH AKU BUS.ODV.GSR 18V-50 2X2AH.jpg" alt=""><p class="proizvodi-text">BOSCH AKU BUŠILICA-ODVRTAČ GSR 18V-50 2X2AH</p><p class="proizvodi-text-opis">Napon: 18 V<br>Akumulator: 2 x 2,0 Ah Li-Ion<br>Obrtni moment: 50 / 28 Nm<br>Broj obrtaja: 0 - 460 / 0 - 1.800 min-1<br>BRUSHLESS motor bez četkica<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/bosch-gsr-180-li-akumulatorska-busilica-odvrtac-06019f8109.jpg" alt=""><p class="proizvodi-text">BOSCH AKU BUŠILICA-ODVRTAČ GSR 180-LI</p><p class="proizvodi-text-opis">Napon: 18 V<br>Akumulator: 2 x 2,0 Ah Li-Ion<br>Obrtni moment: 54 / 21 Nm<br>Broj obrtaja: 0 - 1.700 obr/min-1<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/BOSCH AKU GSB 120-LI.jpg" alt=""><p class="proizvodi-text">BOSCH AKU VIBR.BUŠILICA-ODVRTAČ GSB 120-LI</p><p class="proizvodi-text-opis">Napon: 12 V<br>Akumulator: 2 x 2,0 Ah Li-Ion<br>Obrtni moment: 30 / 14 Nm<br>Broj obrtaja: 0 - 1.500 min-1<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/GSB180-LI.jpg" alt=""><p class="proizvodi-text">BOSCH AKU VIBR.BUŠILICA-ODVRTAČ GSB 180-LI</p><p class="proizvodi-text-opis">Napon: 18 V<br>Akumulator: 2 x 2,0 Ah Li-Ion<br>Obrtni moment: 54 / 21 Nm<br>Broj obrtaja: 0 - 1.700 obr/min-1<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/GWS_1400.jpg" alt=""><p class="proizvodi-text">BOSCH BRUSILICA GWS 1400</p><p class="proizvodi-text-opis">Snaga: 1.400 W<br>Prečnik ploče: 125 mm<br>Broj obrtaja: 11.000 min-1<br>Težina: 2,2 kg</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/gws_2200_230.jpg" alt=""><p class="proizvodi-text">BOSCH BRUSILICA GWS 2200-230</p><p class="proizvodi-text-opis">Snaga: 2.200 W<br>Prečnik ploče: 230 mm<br>Broj obrtaja: 6.500 min-1<br>Težina: 5,4 kg<br>Meki start</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/GWS_7-125_720W.jpg" alt=""><p class="proizvodi-text">BOSCH BRUSILICA GWS 7-125</p><p class="proizvodi-text-opis">Snaga: 720 W<br>Prečnik ploče: 125 mm<br>Broj obrtaja: 11.000 min-1<br>Težina: 1,9 kg</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/GWS_750-125MM.jpg" alt=""><p class="proizvodi-text">BOSCH BRUSILICA GWS 750-125mm</p><p class="proizvodi-text-opis">Snaga: 750 W<br>Prečnik ploče: 125 mm<br>Broj obrtaja: 11.000 min-1<br>Težina: 1,8 kg</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/GWS9-125-900W.jpg" alt=""><p class="proizvodi-text">BOSCH BRUSILICA GWS 9-125</p><p class="proizvodi-text-opis">Snaga: 900 W<br>Prečnik ploče: 125 mm<br>Broj obrtaja: 11.000 min-1<br>Težina: 1,9 kg</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/BOSCH BUS. VIBR. GSB 13 RE.jpg" alt=""><p class="proizvodi-text">BOSCH VIBR.BUŠILICA GSB 13 RE</p><p class="proizvodi-text-opis">Snaga: 600 W<br>Broj obrtaja: 0 - 2.800 min-1<br>Metalna brzostezna glava</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/BOSCH VIBR.BUS._GSB_18_2_RE.jpg" alt=""><p class="proizvodi-text">BOSCH VIBR.BUŠILICA GSB 18-2 RE</p><p class="proizvodi-text-opis">Snaga: 800 W<br>Broj obrtaja: 0 - 1.100 / 3.000 min-1<br>Klasična stezna glava sa ključem<br>Dve brzine<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/bosch-gbh-240-elektro-pneumatski-cekic-busilica-0611272100.jpg" alt=""><p class="proizvodi-text">BOSCH EL.PNEUMATSKI ČEKIĆ GBH 240</p><p class="proizvodi-text-opis">Snaga: 790 W<br>Udarac: 2,7 J<br>Bušenje u betonu: 4-24 mm<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/bosch-gks-600-rucna-kruzna-testera-cirkular-06016a9020.jpg" alt=""><p class="proizvodi-text">BOSCH KRUŽNA TESTERA GKS 600</p><p class="proizvodi-text-opis">Snaga: 1.200 W<br>Prečnik lista testere / rupa: 165 mm / 20 mm<br>Kapacitet sečenja pod 0° (max): 55 mm<br>Broj obrtaja: 5.200 ob/min-1<br>Težina: 3,6 kg</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/MAKITA AKU BRUSILICA DGA452Z.jpg" alt=""><p class="proizvodi-text">MAKITA AKU BRUSILICA DGA452Z</p><p class="proizvodi-text-opis">Napon: 18 V<br>Solo verzija bez akumulatora i punjača<br>Prečnik: 115 mm<br>Broj obrtaja: 11.000 min-1</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/MAKITA AKU BUSILICA DF333 DWAE.jpg" alt=""><p class="proizvodi-text">MAKITA AKU BUŠILICA DF333 DWAE</p><p class="proizvodi-text-opis">Napon: 12 V Max<br>Akumulator: 2 x 2,0 Ah Li-Ion<br>Obrtni moment bušilice: 30 Nm<br>Broj obrtaja: 0 - 1.700 min-1<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/MAKITA AKU UDARNI ZAVRTAC TD110DZ.jpg" alt=""><p class="proizvodi-text">MAKITA AKU UDARNI ZAVRTAČ TD110DZ</p><p class="proizvodi-text-opis">Napon: 12 V<br>Solo verzija bez akumulatora i punjača<br>Prihvat: 1/4" unutrašnji šestougaoni<br>Obrtni moment: 110 Nm<br>Broj obrtaja: 0 - 2.600 min-1<br>Prečnik vijaka: M5 - M12</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/MAKITA BATERIJA BL1850B 18V:5AH.jpg" alt=""><p class="proizvodi-text">MAKITA BATERIJA BL1850B 18V:5Ah</p><p class="proizvodi-text-opis">Napon: 18 V<br>1 x BL1850B 18V 5,0 Ah LXT</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/MAKITA BRUSILICA GA 5030.jpg" alt=""><p class="proizvodi-text">MAKITA BRUSILICA GA5030</p><p class="proizvodi-text-opis">Snaga: 720 W<br>Prečnik ploče (Ø): 125 mm<br>Broj obrtaja: 11.000 min-1<br>Težina: 1,8 kg</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/makita-ga9020-ugaona-brusilica-2200w.jpg" alt=""><p class="proizvodi-text">MAKITA UGAONA BRUSILICA GA9020 2200W</p><p class="proizvodi-text-opis">Snaga: 2.200 W<br>Broj obrtaja: 6.600 min-1<br>Prečnik ploče (Ø): 230 mm<br>Težina: 5,8 kg</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/elektricna-busilica-makita-6413.jpg" alt=""><p class="proizvodi-text">MAKITA EL.BUŠILICA 6413</p><p class="proizvodi-text-opis">Snaga: 450 W<br>Broj obrtaja: 0 - 3.000 min-1<br>Brzostezna glava</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/vibraciona-busilica-makita-hp1640-2.jpg" alt=""><p class="proizvodi-text">MAKITA VIBRACIONA BUŠILICA HP1640-2</p><p class="proizvodi-text-opis">Snaga: 680 W<br>Broj obrtaja: 0-2.800 min-1<br>Klasična stezna glava sa ključem</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/vibraciona-busilica-makita-hp2051h-kofer.jpg" alt=""><p class="proizvodi-text">MAKITA VIBRACIONA BUŠILICA HP2051H-KOFER</p><p class="proizvodi-text-opis">Snaga: 720 W<br>Broj obrtaja: 0-1.200 / 2.900 min-1<br>Metalna brzostezna glava<br>Dve brzine<br>Plastični kofer</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/makita-hs7601-rucna-kruzna-testera-cirkular_1.jpg" alt=""><p class="proizvodi-text">MAKITA RUČNA KRUŽNA TESTERA HS7601</p><p class="proizvodi-text-opis">Snaga: 1.200 W<br>Prečnik lista testere / rupa: 190 mm / 30 mm<br>Kapacitet sečenja pod 0° (max): 66 mm<br>Broj obrtaja: 5.200 min-1<br>Težina: 3,8 kg</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/" alt=""><p class="proizvodi-text"></p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/akuel/" alt=""><p class="proizvodi-text"></p><p class="proizvodi-text-opis"></p></article>
+            </div>
+        </section>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/d692da4b14.js" crossorigin="anonymous"></script>
+    <script src="js/scriptProizvodi.js"></script>
+</body>
+</html>
