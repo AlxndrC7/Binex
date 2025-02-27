@@ -65,15 +65,8 @@ function submenuProizvodiShow() {
 
 function closeNavbar() {
 
-  let navbar = document.querySelector('.navbar-nohover');
   let checkbox = document.querySelector('.navbar-checkbox');
 
-  if (checkbox.checked = false) {
-  navbar.classList.toggle('navbar-nohover-show');
-  checkbox.setAttribute('checked',false);
-  } else {
-    navbar.classList.toggle('navbar-nohover-hide');
-    checkbox.setAttribute('checked',true);
-  }
+  checkbox.checked = false;
 
 }

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrazivi</title>
+    <link rel="stylesheet" href="css/proizvodi.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <nav id="nav">
+            <div class="nav-logo">
+                <img class="img-logo" src="img/binex logo2.png" alt="binex logo">
+            </div>
+            <div id="nav-nohover">
+                <div class="navbar-menu-nohover-container">
+                    <div class="navbar-menu-nohover">
+                        <input class="navbar-checkbox" type="checkbox" name="mobile-menu" id="mobile-menu">
+                            <label class="navbar-checkbox-label" for="mobile-menu"></label>
+                            <span class="navbar-checkbox-span"></span>
+                        </input>
+                        <div class="navbar-nohover">
+                            <ul class="navbar-submenu-nohover">
+                                <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna-nohover navbar-a-nohover" href="#">Početna</a></li>
+                                <li class="menu_onama navbar_ul_li"><a class="navbar_onama-nohover navbar-a-nohover" href="#o_nama" onclick="closeNavbar()">O nama</a></li>
+                                <li class="menu_proizvodi navbar_ul_li" onclick="submenuProizvodiShow()"><a class="navbar_proizvodi-nohover navbar-a-nohover" >Proizvodi</a>
+                                    <ul class="proizvodi-submenu-nohover" style="visibility:collapse;">
+                                        <li class="submenu_item-nohover"><a href="metalurgija.html">Metalurgija</a></li>
+                                        <li class="submenu_item-nohover"><a href="limovi.html">Limovi</a></li>
+                                        <li class="submenu_item-nohover"><a href="prohrom.html">Prohrom (inox)</a></li>
+                                        <li class="submenu_item-nohover"><a href="okov.html">Okov</a></li>
+                                        <li class="submenu_item-nohover"><a href="akuel.html">Aku i Elektro alat</a></li>
+                                        <li class="submenu_item-nohover"><a href="busilice.html">Pribor za bušilice</a></li>
+                                        <li class="submenu_item-nohover"><a href="abrazivi.html">Abrazivi</a></li>
+                                        <li class="submenu_item-nohover"><a href="alat.html">Ručni alat</a></li>
+                                        <li class="submenu_item-nohover"><a href="boje.html">Boje i lakovi</a></li>
+                                        <li class="submenu_item-nohover"><a href="htz.html">HTZ oprema</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_kontakt menu_kontakt-nohover navbar_ul_li"><a class="navbar_kontakt-nohover navbar-a-nohover" href="#kontakt">Kontakt</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-submenu">
+                    <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna navbar-a" href="index.html">Početna</a></li>
+                    <li class="menu_onama navbar_ul_li"><a class="navbar_onama navbar-a" href="index.html#o_nama">O nama</a></li>
+                    <li class="menu_proizvodi navbar_ul_li"><a class="navbar_proizvodi navbar-a" href="proizvodi.html">Proizvodi</a>
+                        <ul class="submenu">
+                            <li class="submenu_item"><a href="metalurgija.html">Metalurgija</a></li>
+                            <li class="submenu_item"><a href="limovi.html">Limovi</a></li>
+                            <li class="submenu_item"><a href="okov.html">Okov</a></li>
+                            <li class="submenu_item"><a href="akuel.html">Aku i Elektro alat</a></li>
+                            <li class="submenu_item"><a href="busilice.html">Pribor za bušilice</a></li>
+                            <li class="submenu_item"><a href="prohrom.html">Prohrom (inox)</a></li>
+                            <li class="submenu_item"><a href="abrazivi.html">Abrazivi</a></li>
+                            <li class="submenu_item"><a href="alat.html">Ručni alat</a></li>
+                            <li class="submenu_item"><a href="boje.html">Boje i lakovi</a></li>
+                            <li class="submenu_item"><a href="htz.html">HTZ oprema</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_kontakt navbar_ul_li"><a class="navbar_kontakt navbar-a" href="#kontakt">Kontakt</a></li>
+                    <div class="fa-navbar">
+                        <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                        <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                        <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                        <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                        <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="fa-navbar-nohover">
+                <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
+            </div>
+        </nav>
+
+        <section id="proizvodi">
+            <nav class="nav-vert-nohover">
+                <ul class="nav-vert-submenu-nohover">
+                    <li class="nav-vert-li"><a href="proizvodi.html">Proizvodi &rightarrow;</a></li>
+                    <li class="nav-vert-li" style="background-color: #9f1c38"><a style="color: #eee;">Abrazivi</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="nav-vert">
+                <ul class="nav-vert-submenu">
+                    <li class="nav-vert-li"><a href="metalurgija.html">Metalurgija</a></li>
+                    <li class="nav-vert-li"><a href="limovi.html">Limovi</a></li>
+                    <li class="nav-vert-li nav-vert-li-okov" onclick="submenuShow()" ><a href="okov.html">Okov</a>
+                        <ul class="okov-submenu">
+                            <li class="okov-submenu-li"><a href="brave.html">Brave</a></li>
+                            <li class="okov-submenu-li"><a href="cilindri.html">Cilindri</a></li>
+                            <li class="okov-submenu-li"><a href="katanci.html">Katanci</a></li>
+                            <li class="okov-submenu-li"><a href="kvake.html">Kvake</a></li>
+                            <li class="okov-submenu-li"><a href="reze.html">Reze</a></li>
+                             <li class="okov-submenu-li"><a href="kliznekapije.html" style="text-wrap: wrap; line-height: normal;">Klizne kapije</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-vert-li"><a href="akuel.html">Aku i Elektro</a></li>
+                    <li class="nav-vert-li"><a href="pribor_za_busilice.html">Pribor za bušilice</a></li>
+                    <li class="nav-vert-li"><a href="prohrom.html">Prohrom (inox)</a></li>
+                    <li class="nav-vert-li"><a style="color: #eee; background-color:#9f1c38;">Abrazivi</a></li>
+                    <li class="nav-vert-li"><a href="alat.html">Ručni alat</a></li>
+                    <li class="nav-vert-li"><a href="boje.html">Boje i lakovi</a></li>
+                    <li class="nav-vert-li"><a href="htz.html">HTZ oprema</a></li>
+                </ul>
+            </nav>
+
+            <div class="proizvodi_article">
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 115x1,2 edge klingspor.jpeg" alt=""><p class="proizvodi-text">REZNA PLOČA 115x1,2x22 EDGE KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® brusne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 115x1,6 a46 tz special klingspor.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 115x1,6x22 A46 TZ SPECIAL KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/115x1.0mm A 960 TZ SPECIAL Klingspor.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 115x1x22 A960 TZ KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 115x2,5 c 24 extra klingspor .jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 115x2,5x22 C24 EXTRA KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za kamen, beton</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 125x2,5 a 24 r klingspor.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 115x2,5x22 A24 R SUPRA KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/Klingspor A 24 R brusne ploče, 115 x 6 x 22.jpg" alt=""><p class="proizvodi-text">BRUSNA PLOČA 115x6x22 A24 R SUPRA KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® brusne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 125x1,2x22 edge special klingspor.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 125x1,2x22 EDGE SPECIAL KLINGSPOR</p><p class="proizvodi-text-opis">EDGE Special Kronenflex® brusne ploče za nerđajući čelik, čelik, aluminijum</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 115x1,6 a46 tz special klingspor.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 125x1,6x22 A46 TZ SPECIAL KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 125x1 a960 tz special klingspor.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 125x1x22 A960 TZ SPECIAL KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 125x2,5 a 24 r klingspor.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 125x2,5x22 A24 R SUPRA KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/brusna ploca 125x6x22 A24 R SUPRA KLINGSPOR.jpg" alt=""><p class="proizvodi-text">BRUSNA PLOČA 125x6x22 A24 R SUPRA KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® brusne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus 115x22 smt 314 klingspor.jpeg" alt=""><p class="proizvodi-text">LEPEZASTI BRUSNI DISK 115x22 GR40 SMT 314 KLINGSPOR</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za čelik, neferitni metali</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus 115x22 smt 314 klingspor.jpeg" alt=""><p class="proizvodi-text">LEPEZASTI BRUSNI DISK 115x22 GR60 SMT 314 KLINGSPOR</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za čelik, neferitni metali</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus 115x22 smt 314 klingspor.jpeg" alt=""><p class="proizvodi-text">LEPEZASTI BRUSNI DISK 115x22 GR80 SMT 314 KLINGSPOR</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za čelik, neferitni metali</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus 115x22 smt 314 klingspor.jpeg" alt=""><p class="proizvodi-text">LEPEZASTI BRUSNI DISK 115x22 GR120 SMT 314 KLINGSPOR</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za čelik, neferitni metali</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus 125x22 smt 624 klingspor.jpg" alt=""><p class="proizvodi-text">LEPEZASTI BRUSNI DISK 115x22 GR40 SMT 624 KLINGSPOR</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus 125x22 smt 624 klingspor.jpg" alt=""><p class="proizvodi-text">LEPEZASTI BRUSNI DISK 115x22 GR60 SMT 624 KLINGSPOR</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus 125x22 smt 624 klingspor.jpg" alt=""><p class="proizvodi-text">LEPEZASTI BRUSNI DISK 115x22 GR80 SMT 624 KLINGSPOR</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus 125x22 smt 624 klingspor.jpg" alt=""><p class="proizvodi-text">LEPEZASTI BRUSNI DISK 115x22 GR120 SMT 624 KLINGSPOR</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus mali km 613.jpg" alt=""><p class="proizvodi-text">LEPEZASTI BRUS MALI 30x15x6 GR40 KM 613</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus mali km 613.jpg" alt=""><p class="proizvodi-text">LEPEZASTI BRUS MALI 30x15x6 GR80 KM 613</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus mali km 613.jpg" alt=""><p class="proizvodi-text">LEPEZASTI BRUS MALI 40x20x6 GR80 KM 613</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/lepezasti brus mali km 613.jpg" alt=""><p class="proizvodi-text">LEPEZASTI BRUS MALI 60x30x6 GR80 KM 613</p><p class="proizvodi-text-opis">Lamelasti brusni diskovi za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/klingspor-180mm-x-1.6mm-a-46-tz-cutting-disc-quantity-box-25-11607-p.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 180x1,6x22 A46 TZ SPECIAL KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/rezna ploca 180x3x22 klingspor a24tz.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 180x3x22 A24 TZ SPECIAL KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za nerđajući čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/brusna ploca 180x6x22 A24 N SUPRA KLINGSPOR.jpg" alt=""><p class="proizvodi-text">BRUSNA PLOČA 180x6x22 A24 N SUPRA KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® brusne ploče za nerđajući čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/230x1,9x22 rezna ploca klingspor a46tz.jpg" alt=""><p class="proizvodi-text">REZNA PLOČA 230x1,9x22 A46 TZ SPECIAL KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/300x3x32 klingspor a24r.webp" alt=""><p class="proizvodi-text">REZNA PLOČA 300x3x32 A24 R SUPRA KLINGSPOR</p><p class="proizvodi-text-opis">Kronenflex® brusne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/dijamantska ploca 115 dt300u klingspor.jpg" alt=""><p class="proizvodi-text">DIJAMANTSKA REZNA PLOČA 115x22 DT300U KLINGSPOR</p><p class="proizvodi-text-opis">Dijamantske ploče za ugaone brusilice za građevinski materijali, beton</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/dijamantska ploca 230 dt300f klingspor.jpeg" alt=""><p class="proizvodi-text">DIJAMANTSKA REZNA PLOČA 230x22 DT300F KLINGSPOR</p><p class="proizvodi-text-opis">Dijamantske testere većeg prečnika za pločice, kalje</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34332859 TYROLIT Rez ploča 115x1 2u1 METAL:INOX STANDARD.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 115x1x22 2u1 STANDARD 34332859</p><p class="proizvodi-text-opis">Rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34332830 TYROLIT Rezna ploča 115x1 INOX STANDARD.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 115x1x22 STANDARD 34332830</p><p class="proizvodi-text-opis">Rezne ploče za nerđajući čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34332859 TYROLIT Rez ploča 115x1 2u1 METAL:INOX STANDARD.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 115x1,6x22 2u1 STANDARD 34332861</p><p class="proizvodi-text-opis">Rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/367771 tyrolit brusna 125x6 standard.jpg" alt=""><p class="proizvodi-text">TYROLIT BRUSNA PLOČA 115x6 STANDARD 367377</p><p class="proizvodi-text-opis">Brusna ploča za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/367771 tyrolit brusna 125x6 standard.jpg" alt=""><p class="proizvodi-text">TYROLIT BRUSNA PLOČA 125x6 STANDARD 367771</p><p class="proizvodi-text-opis">Brusna ploča za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/tyrolit brusna ploca 230x6 standard 367775.jpg" alt=""><p class="proizvodi-text">TYROLIT BRUSNA PLOČA 230x6 STANDARD 367775</p><p class="proizvodi-text-opis">Brusna ploča za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34332859 TYROLIT Rez ploča 115x1 2u1 METAL:INOX STANDARD.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 125x1x22 2u1 STANDARD 34332860</p><p class="proizvodi-text-opis">Rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34332859 TYROLIT Rez ploča 115x1 2u1 METAL:INOX STANDARD.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 125x1,6x22 2u1 STANDARD 34332862</p><p class="proizvodi-text-opis">Rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34332851 TYROLIT Rezna ploča 125x1 METAL STANDARD.jpeg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 125x2,5x22 STANDARD 367569</p><p class="proizvodi-text-opis">Rezne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34332859 TYROLIT Rez ploča 115x1 2u1 METAL:INOX STANDARD.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 178x1,6x22 2u1 STANDARD 34332893</p><p class="proizvodi-text-opis">Rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34332859 TYROLIT Rez ploča 115x1 2u1 METAL:INOX STANDARD.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 230x1,9x22 2u1 STANDARD 34332865</p><p class="proizvodi-text-opis">Rezne ploče za nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/tyrolit rezna ploca 300x4x32 standard.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 230x3x22 STANDARD 367583</p><p class="proizvodi-text-opis">Rezne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/223040 TYROLIT Rezna ploča 300x3.5x32 METAL BASIC.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 300x3,5x32 BASIC 223040</p><p class="proizvodi-text-opis">Rezne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/tyrolit rezna ploca 300x4x32 standard.jpg" alt=""><p class="proizvodi-text">TYROLIT REZNA PLOČA 350x2,8x</p><p class="proizvodi-text-opis">Rezne ploče za čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34318364 LAMEL DISK METAL:INOX 115mm GR40 2u1 BASIC TYROLIT.jpg" alt=""><p class="proizvodi-text">TYROLIT LAMELARNI DISK 115 GR40 2u1 BASIC 34318364</p><p class="proizvodi-text-opis">Materijal za obradu nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34318364 LAMEL DISK METAL:INOX 115mm GR40 2u1 BASIC TYROLIT.jpg" alt=""><p class="proizvodi-text">TYROLIT LAMELARNI DISK 115 GR60 2u1 BASIC 34318365</p><p class="proizvodi-text-opis">Materijal za obradu nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34318364 LAMEL DISK METAL:INOX 115mm GR40 2u1 BASIC TYROLIT.jpg" alt=""><p class="proizvodi-text">TYROLIT LAMELARNI DISK 115 GR80 2u1 BASIC 34318366</p><p class="proizvodi-text-opis">Materijal za obradu nerđajući čelik, čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34318364 LAMEL DISK METAL:INOX 115mm GR40 2u1 BASIC TYROLIT.jpg" alt=""><p class="proizvodi-text">TYROLIT LAMELARNI DISK 115 GR120 2u1 BASIC 34318368</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34318364 LAMEL DISK METAL:INOX 115mm GR40 2u1 BASIC TYROLIT.jpg" alt=""><p class="proizvodi-text">TYROLIT LAMELARNI DISK 125 GR40 2u1 BASIC 34318369</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34318364 LAMEL DISK METAL:INOX 115mm GR40 2u1 BASIC TYROLIT.jpg" alt=""><p class="proizvodi-text">TYROLIT LAMELARNI DISK 125 GR60 2u1 BASIC 34318370</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34318364 LAMEL DISK METAL:INOX 115mm GR40 2u1 BASIC TYROLIT.jpg" alt=""><p class="proizvodi-text">TYROLIT LAMELARNI DISK 125 GR80 2u1 BASIC 34318391</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/34318364 LAMEL DISK METAL:INOX 115mm GR40 2u1 BASIC TYROLIT.jpg" alt=""><p class="proizvodi-text">TYROLIT LAMELARNI DISK 125 GR120 2u1 BASIC 34318392</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/609299 TYROLIT Dijamantska ploča 115x2.jpg" alt=""><p class="proizvodi-text">TYROLIT DIJAMANTSKA PLOČA 115x2 609299</p><p class="proizvodi-text-opis">Univerzalna dijamantska ploča</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/Tyrolit dijamantska ploca 230*2 609194.jpg" alt=""><p class="proizvodi-text">TYROLIT DIJAMANTSKA PLOČA 230x2 609194</p><p class="proizvodi-text-opis">Dijamantska ploča za keramiku</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/papir vodobrusni 230x280mm ps 8 a.jpg" alt=""><p class="proizvodi-text">PAPIR VODOBRUSNI 230x280mm ZRNO 320 PS 8 A</p><p class="proizvodi-text-opis">Araci sa papirnom podlogom za boju, lak, gitove, plastiku</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/papir vodobrusni 230x280mm ps 8 a.jpg" alt=""><p class="proizvodi-text">PAPIR VODOBRUSNI 230x280mm ZRNO 400 PS 8 A</p><p class="proizvodi-text-opis">Araci sa papirnom podlogom za boju, lak, gitove, plastiku</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/papir vodobrusni 230x280mm ps 8 a.jpg" alt=""><p class="proizvodi-text">PAPIR VODOBRUSNI 230x280mm ZRNO 600 PS 8 A</p><p class="proizvodi-text-opis">Araci sa papirnom podlogom za boju, lak, gitove, plastiku</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/papir vodobrusni 230x280mm ps 8 a.jpg" alt=""><p class="proizvodi-text">PAPIR VODOBRUSNI 230x280mm ZRNO 1000 PS 8 A</p><p class="proizvodi-text-opis">Araci sa papirnom podlogom za boju, lak, gitove, plastiku</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/abrazivi/papir vodobrusni 230x280mm ps 8 a.jpg" alt=""><p class="proizvodi-text">PAPIR VODOBRUSNI 230x280mm ZRNO 1500 PS 8 A</p><p class="proizvodi-text-opis">Araci sa papirnom podlogom za boju, lak, gitove, plastiku</p></article>
+            </div>
+        </section>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/d692da4b14.js" crossorigin="anonymous"></script>
+    <script src="js/scriptProizvodi.js"></script>
+</body>
+</html>

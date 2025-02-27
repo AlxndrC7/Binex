@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ručni alat</title>
+    <link rel="stylesheet" href="css/proizvodi.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <nav id="nav">
+            <div class="nav-logo">
+                <img class="img-logo" src="img/binex logo2.png" alt="binex logo">
+            </div>
+            <div id="nav-nohover">
+                <div class="navbar-menu-nohover-container">
+                    <div class="navbar-menu-nohover">
+                        <input class="navbar-checkbox" type="checkbox" name="mobile-menu" id="mobile-menu">
+                            <label class="navbar-checkbox-label" for="mobile-menu"></label>
+                            <span class="navbar-checkbox-span"></span>
+                        </input>
+                        <div class="navbar-nohover">
+                            <ul class="navbar-submenu-nohover">
+                                <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna-nohover navbar-a-nohover" href="#">Početna</a></li>
+                                <li class="menu_onama navbar_ul_li"><a class="navbar_onama-nohover navbar-a-nohover" href="#o_nama" onclick="closeNavbar()">O nama</a></li>
+                                <li class="menu_proizvodi navbar_ul_li" onclick="submenuProizvodiShow()"><a class="navbar_proizvodi-nohover navbar-a-nohover" >Proizvodi</a>
+                                    <ul class="proizvodi-submenu-nohover" style="visibility:collapse;">
+                                        <li class="submenu_item-nohover"><a href="metalurgija.html">Metalurgija</a></li>
+                                        <li class="submenu_item-nohover"><a href="limovi.html">Limovi</a></li>
+                                        <li class="submenu_item-nohover"><a href="prohrom.html">Prohrom (inox)</a></li>
+                                        <li class="submenu_item-nohover"><a href="okov.html">Okov</a></li>
+                                        <li class="submenu_item-nohover"><a href="akuel.html">Aku i Elektro alat</a></li>
+                                        <li class="submenu_item-nohover"><a href="busilice.html">Pribor za bušilice</a></li>
+                                        <li class="submenu_item-nohover"><a href="abrazivi.html">Abrazivi</a></li>
+                                        <li class="submenu_item-nohover"><a href="alat.html">Ručni alat</a></li>
+                                        <li class="submenu_item-nohover"><a href="boje.html">Boje i lakovi</a></li>
+                                        <li class="submenu_item-nohover"><a href="htz.html">HTZ oprema</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_kontakt menu_kontakt-nohover navbar_ul_li"><a class="navbar_kontakt-nohover navbar-a-nohover" href="#kontakt">Kontakt</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-submenu">
+                    <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna navbar-a" href="index.html">Početna</a></li>
+                    <li class="menu_onama navbar_ul_li"><a class="navbar_onama navbar-a" href="index.html#o_nama">O nama</a></li>
+                    <li class="menu_proizvodi navbar_ul_li"><a class="navbar_proizvodi navbar-a" href="proizvodi.html">Proizvodi</a>
+                        <ul class="submenu">
+                            <li class="submenu_item"><a href="metalurgija.html">Metalurgija</a></li>
+                            <li class="submenu_item"><a href="limovi.html">Limovi</a></li>
+                            <li class="submenu_item"><a href="okov.html">Okov</a></li>
+                            <li class="submenu_item"><a href="akuel.html">Aku i Elektro alat</a></li>
+                            <li class="submenu_item"><a href="busilice.html">Pribor za bušilice</a></li>
+                            <li class="submenu_item"><a href="prohrom.html">Prohrom (inox)</a></li>
+                            <li class="submenu_item"><a href="abrazivi.html">Abrazivi</a></li>
+                            <li class="submenu_item"><a href="alat.html">Ručni alat</a></li>
+                            <li class="submenu_item"><a href="boje.html">Boje i lakovi</a></li>
+                            <li class="submenu_item"><a href="htz.html">HTZ oprema</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_kontakt navbar_ul_li"><a class="navbar_kontakt navbar-a" href="#kontakt">Kontakt</a></li>
+                    <div class="fa-navbar">
+                        <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                        <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                        <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                        <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                        <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="fa-navbar-nohover">
+                <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
+            </div>
+        </nav>
+
+        <section id="proizvodi">
+            <nav class="nav-vert-nohover">
+                <ul class="nav-vert-submenu-nohover">
+                    <li class="nav-vert-li"><a href="proizvodi.html">Proizvodi &rightarrow;</a></li>
+                    <li class="nav-vert-li" style="background-color: #9f1c38"><a style="color: #eee;">Ručni alat</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="nav-vert">
+                <ul class="nav-vert-submenu">
+                    <li class="nav-vert-li"><a href="metalurgija.html">Metalurgija</a></li>
+                    <li class="nav-vert-li"><a href="limovi.html">Limovi</a></li>
+                    <li class="nav-vert-li nav-vert-li-okov" onclick="submenuShow()" ><a href="okov.html">Okov</a>
+                        <ul class="okov-submenu">
+                            <li class="okov-submenu-li"><a href="brave.html">Brave</a></li>
+                            <li class="okov-submenu-li"><a href="cilindri.html">Cilindri</a></li>
+                            <li class="okov-submenu-li"><a href="katanci.html">Katanci</a></li>
+                            <li class="okov-submenu-li"><a href="kvake.html">Kvake</a></li>
+                            <li class="okov-submenu-li"><a href="reze.html">Reze</a></li>
+                             <li class="okov-submenu-li"><a href="kliznekapije.html" style="text-wrap: wrap; line-height: normal;">Klizne kapije</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-vert-li"><a href="akuel.html">Aku i Elektro</a></li>
+                    <li class="nav-vert-li"><a href="pribor_za_busilice.html">Pribor za bušilice</a></li>
+                    <li class="nav-vert-li"><a href="prohrom.html">Prohrom (inox)</a></li>
+                    <li class="nav-vert-li"><a href="abrazivi.html">Abrazivi</a></li>
+                    <li class="nav-vert-li"><a style="color: #eee; background-color:#9f1c38;">Ručni alat</a></li>
+                    <li class="nav-vert-li"><a href="boje.html">Boje i lakovi</a></li>
+                    <li class="nav-vert-li"><a href="htz.html">HTZ oprema</a></li>
+                </ul>
+            </nav>
+
+            <div class="proizvodi_article">
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCFL1865051 BATERIJSKA LAMPA INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO BAT.LAMPA INDUSTRIAL HCFL1865051</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHF3008 BONSEK INGCO.jpg" alt=""><p class="proizvodi-text">INGCO BONSEK HHF3008</p><p class="proizvodi-text-opis">Veličina bonsek rama: 300mm/12"<br>Ojačan čelični bonsek ram<br>Aluminijum + TPR drška, jaka i udobna<br>Podešavanje zategnutosti bonsek rama<br>Brzo-izmenjiv mehanizam lista testere<br>Uključen 1kom 65Mn list testere</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HMH041000 MAŠINSKI CEKIC 1000GR INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MAŠINSKI ČEKIĆ 1000GR HMH041000</p><p class="proizvodi-text-opis">Težina bravarskog čekića : 1000g<br>Ručka od tvrdog drveta<br>Kovan<br>Termički tretirano, 45# ugljenični čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HMH040500 MAŠINSKI CEKIC 500GR INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MAŠINSKI ČEKIĆ 500GR HMH040500</p><p class="proizvodi-text-opis">Težina bravarskog čekića : 500g<br>Ručka od tvrdog drveta<br>Kovan<br>Termički tretirano, 45# ugljenični čelik</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCH8816 TESARSKI CEKIC INGCO.jpg" alt=""><p class="proizvodi-text">INGCO TESARSKI ČEKIĆ HCH8816</p><p class="proizvodi-text-opis">Ingco tesarski čekić poseduje unikatan dizajn ručke<br>Tesarski čekić napravljen od kovanog čelika<br>Termički tretiran<br>16oz/450g</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/DM2002 DIGITALNI MULTIMETAR INGCO.png" alt=""><p class="proizvodi-text">INGCO DIGITALNI MULTIMETAR DM2002</p><p class="proizvodi-text-opis">LCD displej<br>DC Voltaža: 200mV/2V/20V/200V/600V<br>AC Voltaža 200V/600V<br>DC Struja 20</p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHAST12101 GEDORA 1:2 8,10,13,15,17,19,22,24,27,30,32mmINGCO.jpg" alt=""><p class="proizvodi-text">INGCO GEDORA 1/2" 8mm,10mm,13mm,15mm,<br>17mm,19mm,22mm,24mm,27mm,30mm,32mm</p><p class="proizvodi-text-opis">Dimenzije gedore 1/2": 8mm-32mm<br>Materijal: 50BV30<br>Termički tertirano, crni niklovan<br></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HKTWC0401 SET DLETA ZA DRVO 4 kom INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SET DLETA ZA DRVO 4kom HKTWC0401</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/WAH3008 DRŽAČ ELEKTRODE 300A INGCO.jpg" alt=""><p class="proizvodi-text">INGCO DRŽAČ ELEKTRODE 300A WAH3008</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/WAH5008 DRŽAČ ELEKTRODE 500A INGCO.jpg" alt=""><p class="proizvodi-text">INGCO DRŽAČ ELEKTRODE 500A WAH5008</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HSDT1408 GLINERICA 3x140mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO GLINERICA 3X140mm HSDT1408</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HSDT1908 GLINERICA 4x190mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO GLINERICA 4X190mm HSDT1908</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHK12091 SET KUGL IMBUS KLJUČ 1,5-10mm INDUSTRIAL.jpg" alt=""><p class="proizvodi-text">INGCO SET KUGL. IMBUS KLJUČ 1,5-10mm INDUSTRIAL HHK12091</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHK11091 SET IMBUSA 1,5-10mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SET IMBUSA 1,5-10mm INDUSTRIAL HHK11091</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHK11092 SET IMBUS KLJUČ. 1,5-10mm INDUSTRIAL INGC.jpg" alt=""><p class="proizvodi-text">INGCO SET IMBUS KLJUČ 1,5-10mm INDUSTRIAL HHK11092</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHK12092 SET KUGL IMBUS KLJUC 1,5-10mm INDUST INGC.jpg" alt=""><p class="proizvodi-text">INGCO SET KUGL IMBUS KLJUČ 1,5-10mm INDUSTRIAL HHK12092</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/ASE008 5-DELNI SET IZVLAKAČA VIJAKA INGCO.jpg" alt=""><p class="proizvodi-text">INGCO 5-DELNI SET IZVLAKAČA VIJAKA ASE008</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCLR0130 ZIDARSKI KANAP I PUDER INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ZIDARSKI KANAP I PUDER HCLR0130</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HRP02200 ARMIRAČKA KLEŠTA 200,228,255mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ARMIRAČKA KLEŠTA 200mm HRP02200</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HRP02200 ARMIRAČKA KLEŠTA 200,228,255mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ARMIRAČKA KLEŠTA 228mm HRP02230</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HRP02200 ARMIRAČKA KLEŠTA 200,228,255mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ARMIRAČKA KLEŠTA 255mm HRP02250</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HILNP28168 IZOL. ŠPIC KLEŠTA 160mm INDUSTRIAL INGC.jpg" alt=""><p class="proizvodi-text">INGCO IZOL.ŠPIC KLEŠTA 160mm INDUSTRIAL HILNP28168</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HIBNP28208 IZOL. ZAKRIV. ŠPIC KLEŠTA 200mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO IZOL. ŠPIC KLEŠTA 200mm INDUSTRIAL HIBNP28208</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HILNP28208 IZOL. ŠPIC KLEŠTA 200mm INDUSTRIAL INGC.jpg" alt=""><p class="proizvodi-text">INGCO IZOL.ŠPIC KLEŠTA 200mm INDUSTRIAL HILNP28208</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HIHLDCP28160 IZOL. SEČICE DIJAG PRODUŽENE 160mm IND. INGCO.jpg" alt=""><p class="proizvodi-text">INGCO IZOL.SEČICE DIJAG.PRODUŽENE 160mm INDUSTRIAL HIHLDCP28160</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HDCP28168 SEĆICE KOSE 160mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SEČICE KOSE 160mm INDUSTRIAL HDCP28168</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HICCB28160 IZOL. SEČICE ZA KABLOVE 160mm INDUSTRIAL.jpg" alt=""><p class="proizvodi-text">INGCO IZOL.SEČICE ZA KABLOVE 160mm INDUSTRIAL HICCB28160</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HIWSP28160 IZOL. KLEŠTA ZA SKIDANJE IZOL. INDUSTRI.jpg" alt=""><p class="proizvodi-text">INGCO IZOL.KLEŠTA ZA SKIDANJE IZOL. INDUSTRIAL HIWSP28160</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HPP28251 KLEŠTA ZA CEVI 250mm 10 INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KLEŠTA ZA CEVI 250mm 10" HPP28251</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHLNP28160 OJAČANA ŠPIC KLEŠTA 160mm INDUSTRIAL IN.jpg" alt=""><p class="proizvodi-text">INGCO OJAČANA ŠPIC KLEŠTA 160mm INDUSTRIAL HHLNP28160</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HPW04011 ŠVED KLEŠTA 40mm HEAVY DUTY INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ŠVED KLEŠTA 40mm HEAVY DUTY HPW04011</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HPW04151 ŠVED KLEŠTA 55mm HEAVY DUTY INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ŠVED KLEŠTA 55mm HEAVY DUTY HPW04151</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HPW04021 ŠVED KLEŠTA 67mm HEAVY DUTY INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ŠVED KLEŠTA 67mm HEAVY DUTY HPW04021</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HPW0808 KLEŠTA ZA CEVI 200mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KLEŠTA ZA CEVI 200mm HPW0808</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HR105 KLEŠTA ZA POP NITNE 3.2-4.8 INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KLEŠTA ZA POP NITNE 3.2-4.8 INDUSTRIAL HR105</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HR171 KLEŠTA ZA POP NITNE 3.2-4.8 INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KLEŠTA ZA POP NITNE 3.2-4.8 HR171</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HR104 KLEŠTA ZA POP NITNE 2.4-4.8 INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KLEŠTA ZA POP NITNE 2.4-4.8 HR104</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCSPA101 OKASTO VILASTI KLJUČ 8,10,13,15,17,19,22,24,27,30,32mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO OKASTO VILASTI KLJUČ 8,10,13,15,17,19,22,24,27,30,32mm<br>HCSPA101</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HRSW041 KLJUČ OKSATI OJAČAN 41MM INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KLJUČ OKASTI OJAČAN 41mm HRSW041</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HKSPA1088-I SET OKASTO-VILASTIH KLJUČEVA INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SET OKASTO-VILASTIH KLJUČEVA HKSPA1088</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HADW131088 ŠTELUJUĆI KLJUČ 200,250,300mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ŠTELUJUĆI KLJUČ 200mm INDUSTRIAL HADW131088</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HADW131088 ŠTELUJUĆI KLJUČ 200,250,300mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ŠTELUJUĆI KLJUČ 250mm INDUSTRIAL HADW1311088</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HADW131088 ŠTELUJUĆI KLJUČ 200,250,300mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO ŠTELUJUĆI KLJUČ 300mm INDUSTRIAL HADW131128</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCSPAR101 KLJUČ SA RAČNOM 10,13,17mm INDUSTRIAL.jpg" alt=""><p class="proizvodi-text">INGCO KLJUČ SA RAČNOM 10mm INDUSTRIAL HCSPAR101</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCSPAR101 KLJUČ SA RAČNOM 10,13,17mm INDUSTRIAL.jpg" alt=""><p class="proizvodi-text">INGCO KLJUČ SA RAČNOM 13mm INDUSTRIAL HCSPAR131</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCSPAR101 KLJUČ SA RAČNOM 10,13,17mm INDUSTRIAL.jpg" alt=""><p class="proizvodi-text">INGCO KLJUČ SA RAČNOM 17mm INDUSTRIAL HCSPAR171</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHKT80838 KLJUČ TOREX SA T RUČKOM SET 8:1 INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SET KLJUČ TOREX SA T RUČKOM 8/1 HHKT80838</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HKTS14122 KLJUČEVI NASADNI 12:1 1:4 INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KLJUČEVI NASADNI 1/4" 12/1 HKTS14122</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/ HICP28168 IZOLOVANA KOMBINOVANA KLEŠTA 160,180,200mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO IZOLOVANA KOMBINOVANA KLEŠTA 160mm INDUSTRIAL HICP28168</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/ HICP28168 IZOLOVANA KOMBINOVANA KLEŠTA 160,180,200mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO IZOLOVANA KOMBINOVANA KLEŠTA 180mm INDUSTRIAL HICP28188</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/ HICP28168 IZOLOVANA KOMBINOVANA KLEŠTA 160,180,200mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO IZOLOVANA KOMBINOVANA KLEŠTA 200mm INDUSTRIAL HICP28208</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCP28168 KOMBINOVANA KLEŠTA 160,180,200mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KOMBINOVANA KLEŠTA 160mm INDUSTRIAL HCP28168</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCP28168 KOMBINOVANA KLEŠTA 160,180,200mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KOMBINOVANA KLEŠTA 180mm INDUSTRIAL HCP28188</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCP28168 KOMBINOVANA KLEŠTA 160,180,200mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KOMBINOVANA KLEŠTA 200mm INDUSTRIAL HCP28200</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HTB03 KUTIJA ZA ALAT 400x200x195mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO KUTIJA ZA ALAT 400X200X195mm HTB03</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HLL306505 LASER LINIJSKI SAMONIVELACIONI CRVENI ZRACI INGCO.jpg" alt=""><p class="proizvodi-text">INGCO LASER LINIJSKI SAMONIVELACIONI CRVENI ZRACI HLL306505</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HSL08100 LIBELA SPIRIT 100cm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO LIBELA SPIRIT 100cm HSL08100</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HLT78033 BAŠTENSKE MAKAZE SET 3KOM INGCO.jpg" alt=""><p class="proizvodi-text">INGCO BAŠTENSKE MAKAZE SET 3kom HLT78033</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HBC0836 MAKAZE ZA ARMATURU 36''-16mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MAKAZE ZA ARMATURU 36"-16mm HBC0836</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HBC0818 MAKAZE ZA ARMATURU 18''-8mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MAKAZE ZA ARMATURU 18"-8mm HBC0818</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HTSN0110L MAKAZE ZA LIM LEVE INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MAKAZE ZA LIM LEVE HTSN0110L</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HPS3401 MAKAZE ZA TRAVU INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MAKAZE ZA TRAVU HPS3401</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/AMWH6001 MAGNET ZA VARENJE SET 6:1 INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MAGNET ZA VARENJE SET 6/1 AMWH6001</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HSMT8430 MERNA TRAKA 30mx12,5mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MERNA TRAKA 30mx12,5mm HSMT8430</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HSMT8550 MERNA TRAKA 50m x 12,5mm INGCO.jpg" alt=""><p class="proizvodi-text">INGCO MERNA TRAKA 50mx12,5mm HSMT8550</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HHL013AAA2 NAGLAVNA LAMPA INGCO.jpg" alt=""><p class="proizvodi-text">INGCO NAGLAVNA LAMPA HHL013AAA2</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HKISSD12101 SET 10:1 UDARNIH NASADNIH KLJUČEVA 1:2'' INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SET UDARNIH NASADNIH KLJUČEVA 1/2" 10/1 HKISSD12101</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HKISSD12102L NASADNI KLJUČEVI 10:1 1:2'' INGCO.jpg" alt=""><p class="proizvodi-text">INGCO NASADNI KLJUČEVI 1/2" 10/1 HKISSD12102L</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HS286150 RAVNI ODVIJAČ 150mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO RAVNI ODVIJAČ 150mm INDUSTRIAL HS286150</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HKSD1028 SET ODVIJAČI+PRECIZNI ODVIJAČ 10:1 INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SET ODVIJAČI + PRECIZNI ODVIJAČ 10/1 HKSD1028</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HKSD0248 SET ODVIJAČA SL+PH DUŽI INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SET ODVIJAČA SL+PH DUŽI HKSD0248</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/ATG0601 PIŠTOLJ ZA DUVANJE GUMA INGCO.jpg" alt=""><p class="proizvodi-text">INGCO PIŠTOLJ ZA DUVANJE GUMA ATG0601</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/ABG031 PIŠTOLJ ZA IZDUVAVANJE INGCO.jpg" alt=""><p class="proizvodi-text">INGCO PIŠTOLJ ZA IZDUVAVANJE ABG031</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HCG0112 PIŠTOLJ ZA SILIKON 308mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO PIŠTOLJ ZA SILIKON 308mm INDUSTRIAL HCG0112</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HEB12051 PRODUŽETAK ZA GEDORU 1:2'' 125MM INGCO.jpg" alt=""><p class="proizvodi-text">INGCO PRODUŽETAK ZA GEDORU 1/2" 125mm HEB12051</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HIHLDCP28160 IZOL. SEČICE DIJAG PRODUŽENE 160mm IND. INGCO.jpg" alt=""><p class="proizvodi-text">INGCO IZOL. SEČICE DIJAG. PRODUŽENE 160mm INDUSTRIAL HIHLDCP28160</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HDCP28168 SEĆICE KOSE 160mm INDUSTRIAL INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SEČICE KOSE 160mm INDUSTRIAL HDCP28168</p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/HAX0208008 SEKIRA KOVANA 800GR INGCO.jpg" alt=""><p class="proizvodi-text">INGCO SEKIRA KOVANA 800gr HAX0208008</p><p class="proizvodi-text-opis"></p></article>
+                <!-- <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/" alt=""><p class="proizvodi-text"></p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/" alt=""><p class="proizvodi-text"></p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/" alt=""><p class="proizvodi-text"></p><p class="proizvodi-text-opis"></p></article>
+                <article class="proizvodi-content" style="height: 52%; display: inline-block;"><img src="img/rucnialat/" alt=""><p class="proizvodi-text"></p><p class="proizvodi-text-opis"></p></article> -->
+
+            </div>
+        </section>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/d692da4b14.js" crossorigin="anonymous"></script>
+    <script src="js/scriptProizvodi.js"></script>
+</body>
+</html>

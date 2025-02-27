@@ -124,10 +124,15 @@ a:hover {
 }
 
 .navbar-checkbox:checked ~ .navbar-nohover {
-    /* display: block; */
     visibility: visible;
     opacity: 1;
     transform: translateX(145%);
+}
+
+.navbar-checkbox:not(:checked) ~ .navbar-nohover {
+    transform: translateX(-145%);
+    opacity: 0;
+    visibility: collapse;
 }
 
 .navbar-nohover {
@@ -141,18 +146,6 @@ a:hover {
     background-image: linear-gradient(#aaaaaa, #ff7b7b);
     z-index: 100;
     transition: all 0.3s linear;
-}
-
-.navbar-nohover-hide {
-    transform: translateX(-145%);
-    opacity: 0;
-    visibility: collapse;
-}
-
-.navbar-nohover-show {
-    transform: translateX(145%);
-    opacity: 1;
-    visibility: visible;
 }
 
 .navbar-submenu-nohover {
