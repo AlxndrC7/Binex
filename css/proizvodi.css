@@ -199,7 +199,7 @@ a:hover {
 
 .show-proizvodi-submenu-nohover {
     visibility: visible !important;
-    /* display: block !important; */
+    display: block !important;
     position: absolute;
     margin-left: 5px;
     width: max-content;
