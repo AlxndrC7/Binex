@@ -38,11 +38,11 @@ function submenuShow() {
   if(okovSub.style.visibility='collapse') {
     okovSub.classList.toggle('show');
     okovSub.style.transition='0.4s';
-  } 
-  else {
-    okovLi.classList.toggle('hide');
-    okovSub.classList.toggle('hide');
   }
+  // else {
+  //   okovLi.classList.toggle('hide');
+  //   okovSub.classList.toggle('hide');
+  // }
 }
 
 function submenuProizvodiShow() {
@@ -54,11 +54,11 @@ function submenuProizvodiShow() {
     submenu_proizvodi.classList.toggle('show-proizvodi-submenu-nohover');
     menu_kontakt.classList.toggle('moveDown-menu_kontakt')
   }
-  else {
-    // submenu_proizvodi.style.display='none';
-    submenu_proizvodi.classList.toggle('hide-proizvodi-submenu-nohover');
-    menu_kontakt.classList.toggle('moveUp-menu_kontakt');
-  }
+  // else {
+  //   submenu_proizvodi.style.display='none';
+  //   submenu_proizvodi.classList.toggle('hide-proizvodi-submenu-nohover');
+  //   menu_kontakt.classList.toggle('moveUp-menu_kontakt');
+  // }
 }
 
 
