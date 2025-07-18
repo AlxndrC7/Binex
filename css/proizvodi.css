@@ -102,10 +102,6 @@ a:hover {
     transition: all 0.2s linear;
 }
 
-.navbar-checkbox-label:hover:before {
-    top: -2px;
-}
-
 .navbar-checkbox-label:after {
     content: '';
     position: absolute;
@@ -117,16 +113,20 @@ a:hover {
     transition: all 0.2s linear;
 }
 
+.navbar-checkbox-label:hover:before {
+    top: -2px;
+}
+
 .navbar-checkbox-label:hover:after {
     bottom: -2px;
 }
 
-.navbar-checkbox:checked~.navbar-checkbox-label:before {
+.navbar-checkbox:checked ~ .navbar-checkbox-label:before {
     transform: rotate(135deg);
     top: 50%;
 }
 
-.navbar-checkbox:checked~.navbar-checkbox-label:after {
+.navbar-checkbox:checked ~ .navbar-checkbox-label:after {
     transform: rotate(-135deg);
     top: 50%;
 }
@@ -244,7 +244,7 @@ nav:not(.nav-vert, .nav-vert-nohover) {
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(270deg, #787c96, 60%, #00000000);
+    background-image: linear-gradient(270deg, #787c96, 75%, #00000000);
 }
 
 .nav-logo {
@@ -719,7 +719,7 @@ only screen and (max-width: 1200px) {
         top: 15%;
     }
 
-    @media only screen @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         margin-top: 5%;
     }
 }
@@ -820,7 +820,6 @@ only screen and (max-width: 1200px) {
     overflow: hidden;
     margin: 10px 10px;
 
-    @media only screen and (min-width: 1200px) {}
 
     @media only screen and (max-width: 1000px) {
         display: inline-block;
@@ -860,12 +859,13 @@ only screen and (max-width: 1200px) {
 }
 
 .proizvodi-text-opis {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 400;
     margin-top: 5px;
 
     @media only screen and (min-width: 1200px) {
-        font-size: 10px;
+        font-size: 12px;
+        line-height: 1.4;
     }
 }
 
@@ -873,15 +873,15 @@ only screen and (max-width: 1200px) {
 .proizvodi-content i {
     object-fit: contain;
     width: 100%;
-    height: 60%;
+    height: 50%;
     transition: all 0.5s;
 
     @media only screen and (max-width: 1400px) {
-        height: 60%;
+        height: 50%;
     }
 
     @media only screen and (max-width: 1200px) {
-        height: 60%;
+        height: 50%;
     }
 }
 
@@ -900,8 +900,8 @@ only screen and (max-width: 1200px) {
 .okovzakapije-hover {
     opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 0; */
+    /* left: 0; */
     height: 100%;
     width: 100%;
 }
@@ -910,7 +910,8 @@ only screen and (max-width: 1200px) {
     opacity: 1;
     object-fit: contain;
     transition: all 0.5s;
-    transform: scale(1.0);
+    transform: scale(2.0);
+    z-index: 10;
 }
 
 /************************/
@@ -947,4 +948,158 @@ only screen and (max-width: 1200px) {
 .hide {
     visibility: collapse;
     display: none;
+}
+
+/************************/
+/****** BOJE I LAKOVI ******/
+/************************/
+
+#popup {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(1, 1, 1, 90%), rgb(1, 1, 1, 90%));
+    transition: all 0.4s;
+}
+
+#popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    opacity: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.2);
+    transition: all 0.4s;
+}
+
+#popup:target .popup-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup-ton-karta {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(1, 1, 1, 90%), rgb(1, 1, 1, 90%));
+    transition: all 0.4s;
+}
+
+#popup-ton-karta:target {
+    opacity: 1;
+    visibility: visible;;
+}
+
+#popup-ton-karta:target .popup-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#ton-karta-container-3u1,
+#ton-karta-container-temeljna,
+#ton-karta-container-nitro-emajl,
+#ton-karta-container-sintex,
+#ton-karta-container-rapid,
+#ton-karta-container-pyrostal,
+#ton-karta-container-mehano,
+#ton-karta-container-aqualin-emajl,
+#ton-karta-container-antique,
+#ton-karta-container-lazura {
+    display: none;
+}
+
+.ton-karta-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 4px;
+    row-gap: 8px;
+    height: 70%;
+
+}
+
+.showTK {
+    display: flex !important;
+    position: absolute;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.ton-karta-img {
+    display: flex;
+    width: 130px;
+    height: 130px;
+    border: 0.8px solid black;
+}
+
+.ton-karta-text {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    background-color: #f5f5f5e3;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 50px;
+}
+
+.popup-img {
+    width: 20%;
+}
+
+.popup-text {
+    column-count: 2;
+    column-rule: 1px solid darkgrey;
+    column-gap: 70px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-spacing: 2px;
+    font-weight: 200;
+    padding: 30px 60px;
+}
+
+.boje-text-span {
+    border: 1px solid gray;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.boje-text-span:hover {
+    background-color: #9f1c38;
+    color: #eee;
 }

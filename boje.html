@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boje i lakovi</title>
+    <link rel="stylesheet" href="css/proizvodi.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <div class="nav-logo">
+            <img class="img-logo" src="img/binex logo2.png" alt="binex logo">
+        </div>
+        <div id="nav-nohover">
+            <div class="navbar-menu-nohover-container">
+                <div class="navbar-menu-nohover">
+                    <input class="navbar-checkbox" type="checkbox" name="mobile-menu" id="mobile-menu">
+                        <label class="navbar-checkbox-label" for="mobile-menu"></label>
+                        <span class="navbar-checkbox-span"></span>
+                    </input>
+                    <div class="navbar-nohover">
+                        <ul class="navbar-submenu-nohover">
+                            <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna-nohover navbar-a-nohover" href="index.html">Početna</a></li>
+                            <li class="menu_onama navbar_ul_li"><a class="navbar_onama-nohover navbar-a-nohover" href="index.html#o_nama" onclick="closeNavbar()">O nama</a></li>
+                            <li class="menu_proizvodi navbar_ul_li" onclick="submenuProizvodiShow()"><a class="navbar_proizvodi-nohover navbar-a-nohover" >Proizvodi</a>
+                                <ul class="proizvodi-submenu-nohover" style="visibility:collapse;">
+                                    <li class="submenu_item-nohover"><a href="metalurgija.html">Metalurgija</a></li>
+                                    <li class="submenu_item-nohover"><a href="limovi.html">Limovi</a></li>
+                                    <li class="submenu_item-nohover"><a href="prohrom.html">Prohrom (inox)</a></li>
+                                    <li class="submenu_item-nohover"><a href="okov.html">Okov</a></li>
+                                    <li class="submenu_item-nohover"><a href="akuel.html">Aku i Elektro alat</a></li>
+                                    <li class="submenu_item-nohover"><a href="busilice.html">Pribor za bušilice</a></li>
+                                    <li class="submenu_item-nohover"><a href="abrazivi.html">Abrazivi</a></li>
+                                    <li class="submenu_item-nohover"><a href="alat.html">Ručni alat</a></li>
+                                    <li class="submenu_item-nohover"><a href="boje.html">Boje i lakovi</a></li>
+                                    <li class="submenu_item-nohover"><a href="htz.html">HTZ oprema</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu_kontakt menu_kontakt-nohover navbar_ul_li"><a class="navbar_kontakt-nohover navbar-a-nohover" href="index.html#kontakt">Kontakt</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="navbar-submenu">
+                <li class="menu_pocetna navbar_ul_li"><a class="navbar_pocetna navbar-a" href="index.html">Početna</a></li>
+                <li class="menu_onama navbar_ul_li"><a class="navbar_onama navbar-a" href="index.html#o_nama">O nama</a></li>
+                <li class="menu_proizvodi navbar_ul_li"><a class="navbar_proizvodi navbar-a" href="proizvodi.html">Proizvodi</a>
+                    <ul class="submenu">
+                        <li class="submenu_item"><a href="metalurgija.html">Metalurgija</a></li>
+                        <li class="submenu_item"><a href="limovi.html">Limovi</a></li>
+                        <li class="submenu_item"><a href="okov.html">Okov</a></li>
+                        <li class="submenu_item"><a href="akuel.html">Aku i Elektro alat</a></li>
+                        <li class="submenu_item"><a href="busilice.html">Pribor za bušilice</a></li>
+                        <li class="submenu_item"><a href="prohrom.html">Prohrom (inox)</a></li>
+                        <li class="submenu_item"><a href="abrazivi.html">Abrazivi</a></li>
+                        <li class="submenu_item"><a href="alat.html">Ručni alat</a></li>
+                        <li class="submenu_item"><a href="boje.html">Boje i lakovi</a></li>
+                        <li class="submenu_item"><a href="htz.html">HTZ oprema</a></li>
+                    </ul>
+                </li>
+                <li class="menu_kontakt navbar_ul_li"><a class="navbar_kontakt navbar-a" href="#kontakt">Kontakt</a></li>
+                <div class="fa-navbar">
+                    <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+                    <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+                    <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+                    <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+                    <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
+                </div>
+            </ul>
+        </div>
+        <div class="fa-navbar-nohover">
+            <li class="tel" style="margin-left: 12px;">Veleprodaja Subotička 1</li>
+            <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3825 140&nbsp;&nbsp;<i class="fa-solid fa-phone"></i>021/ 3825 139</li>
+            <li class="tel"><i class="fa-solid fa-store"></i>Maloprodaja Temerinska 8</li>
+            <li class="tel"><i class="fa-solid fa-phone"></i>021/ 3039 877</li>
+            <li class="email"><i class="fa-regular fa-envelope"></i>binex.novisad@gmail.com</li>
+        </div>
+    </nav>
+
+    <section id="proizvodi">
+        <nav class="nav-vert-nohover">
+            <ul class="nav-vert-submenu-nohover">
+                <li class="nav-vert-li"><a href="proizvodi.html">Proizvodi &rightarrow;</a></li>
+                <li class="nav-vert-li" style="background-color: #9f1c38"><a style="color: #eee;">Boje i lakovi</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="nav-vert">
+            <ul class="nav-vert-submenu">
+                <li class="nav-vert-li"><a href="metalurgija.html">Metalurgija</a></li>
+                <li class="nav-vert-li"><a href="limovi.html">Limovi</a></li>
+                <li class="nav-vert-li nav-vert-li-okov" onclick="submenuShow()" ><a href="okov.html">Okov</a>
+                    <ul class="okov-submenu">
+                        <li class="okov-submenu-li"><a href="brave.html">Brave</a></li>
+                        <li class="okov-submenu-li"><a href="cilindri.html">Cilindri</a></li>
+                        <li class="okov-submenu-li"><a href="katanci.html">Katanci</a></li>
+                        <li class="okov-submenu-li"><a href="kvake.html">Kvake</a></li>
+                        <li class="okov-submenu-li"><a href="reze.html">Reze</a></li>
+                            <li class="okov-submenu-li"><a href="kliznekapije.html" style="text-wrap: wrap; line-height: normal;">Klizne kapije</a></li>
+                    </ul>
+                </li>
+                <li class="nav-vert-li"><a href="akuel.html">Aku i Elektro</a></li>
+                <li class="nav-vert-li"><a href="pribor_za_busilice.html">Pribor za bušilice</a></li>
+                <li class="nav-vert-li"><a href="prohrom.html">Prohrom (inox)</a></li>
+                <li class="nav-vert-li"><a href="abrazivi.html">Abrazivi</a></li>
+                <li class="nav-vert-li"><a href="alat.html">Ručni alat</a></li>
+                <li class="nav-vert-li"><a style="color: #eee; background-color:#9f1c38;">Boje i lakovi</a></li>
+                <li class="nav-vert-li"><a href="htz.html">HTZ oprema</a></li>
+            </ul>
+        </nav>
+
+        <div class="proizvodi_article">
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/boja za metal 3u1 irkom.png" alt="IRKOM 3U1 je brzosušiva temeljno – završna boja za zaštitu svih metalnih površina.  U sebi sadrži antikorozivno sredstvo, osnovnu i završnu boju, sve u jednom proizvodu.  Nanosi se direktno na koroziju, potrebno je samo otkloniti grube, trošne delove korozije i zatim se može direktno naneti Irkom 3u1 premaz.  U pitanju je boja premium kvaliteta, nastala kao jedinstvena kombinacija najboljih karakteristika uljanih i nitro boja. Uljane boje karakteriše izuzetna elastičnost premaza, duga postojanost, dok nitro boje brzina sušenja. Ima odličnu pokrivnu moć, razlivanje i popunjavanje.  Karakteriše je izuzetna tvrdoća, elastičnost, adhezija, odnosno prijanjanje, otpornost na udar i zaštita od atmosferskih uticaja. Stvara vodootporni film i u sebi sadrži UV blokatore koji onemogućavaju da boja promeni nijansu i puca pri izloženosti sunčevim zracima.
+                Može se koristiti za farbanje metalnih ograda, dvorišnih kapija, terasa, metalne galanterije, simsova, oluka, radijatora, kao i TA peći (trpi temperature preko 100°C).
+                Veliku primenu ima i u održavanju, odnosno bojenju i zaštiti poljoprivrednih mašina, gde se više od 15 godina pokazuje kao pravi izbor poljoprivrednika.
+                Iako je izvorno stvorena za zaštitu metala, može se nanositi i na drvene površine (dajući efekat plastificiranosti), kao i na plastiku (potrebno je prebrusiti površinu i skinuti sjajni sloj sa nje).
+                Ova boja poseduje sve odgovarajuće ateste, u sebi sadrži dva blokatora korozije i pruža kvalitetnu zaštitu metala od 5 do 15 godina (rezultati ispitivanja Instituta IMS a.d. Beograd izvestaj br. AKZ 52/04-3) u raznim vremenskim uslovima.
+                Ono što je najbitnije jeste da se pravilno ispoštuje procedura korišćenja ovog proizvoda."></a>
+            </p>
+            <p class="proizvodi-text">BOJA ZA METAL 3U1 IRKOM<br><br><a id="boje-text-span-3u1" class="boje-text-span" href="#popup-ton-karta" alt="ton-karta-container-3u1">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">UV otporan i vodoodbojan<br>Štiti metal<br>Brzosušiva baza<br>Za enterijer i eksterijer<br>1kg,3kg,20kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/temeljna boja za metal irkom.png" alt="TEMELJNA BOJA za metal je jednokomponentni uljani premaz za osnovnu zaštitu čeličnih konstrukcija i metalnih površina od korozije u enterijeru i eksterijeru. 
+                Izrađena je od alkidnih sintetičkih smola, antikorozivnih pigmenata, aditiva i organskih rastvarača. Koristi se u sistemu sa Sintex univerzalnim emajlom ili Antik emajlom (preporučljivo je naneti dva sloja osnovne boje i dva sloja završne boje). 
+                Primenu ima u zaštiti čeličnih konstrukcija, poljoprivrednih i građevinskih mašina, karoserije automobila i svih ostalih metalnih površina. Kao završni premaz može se naneti samo emajl na uljanoj bazi. 
+                Završni premazi na nitro bazi ili Irkom 3u1 nije preporučljivo nanositi preko ove temeljne boje.  
+                Irkom temeljna boja za metal može se koristiti i kao samostalni premaz, u tom slučaju potrebno je naneti najmanje 2-3 sloja, debljine 30-40 mikrona u jednom sloju, ukupno 120 mikrona. Dostupna je u sivoj, crvenoj, beloj i crnoj boji.
+           "></a>
+            <p class="proizvodi-text">TEMELJNA BOJA ZA METAL IRKOM<br><br><a id="boje-text-span-temeljna" class="boje-text-span" href="#popup-ton-karta" alt="ton-karta-container-temeljna">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Na bazi alkidnih smola<br>Za enterijer i eksterijer<br>750ml, 3kg, 25kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/nitro temeljna boja za metal irkom.png" alt="Irkom Nitro temeljna boja je osnovna, antikorozivna boja koja se koristi za zaštitu metala.  Nanosi se kao podloga pre nanošenja završne Irkom nitro emajl boje ili sintetičkog emajla. Proizvod je na bazi nitroceluloze, alkidnih smola, antikorozivnih pigmenata, punioca, aditiva i organskih rastvarača. Koristi se u metalnoj industriji i u širokoj potrošnji. Ne preporučuje se kao osnovna boja za aluminijum, bakar i cink. Dostupna je u sivoj, crvenoj, beloj i crnoj boji."></a>
+            <p class="proizvodi-text">NITRO TEMELJNA BOJA ZA METAL<br><br><a id="boje-text-span-temeljna" class="boje-text-span" href="#popup-ton-karta" alt="ton-karta-container-temeljna">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Na nitro bazi<br>Brzo se suši<br>Za enterijer<br>750ml, 3l, 20kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/nitro emajl za drvo i metal irkom.png" alt="IRKOM NITRO EMAJL lak je univerzalni završni premaz za dekoraciju i zaštitu metalnih i drvenih površina u enterijeru i površina koje nisu direktno izložene atmosferskim uticajima u eksterijeru. Proizvod je na bazi nitroceluloze, smola i odabranih pigmenata. Koristi se u metalnoj i drvnoj industriji kao i u širokoj potrošnji. "></a>
+            <p class="proizvodi-text">NITRO EMAJL ZA DRVO I METAL<br><br><a id="boje-text-span-emajl" class="boje-text-span" href="#popup-ton-karta" alt="ton-karta-container-nitro-emajl">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Na nitro bazi<br>Brzo se suši<br>Za enterijer<br>750ml, 3l, 20kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/sintex uljana boja za drvo i metal irkom.png" alt="SINTEX je univerzalni, uljani, antikorozivni premaz za dekoraciju i zaštitu metala i drveta u enterijeru i eksterijeru.  Izrađen je na bazi alkidnih smola, organskih i neorganskih pigmenata i rastvarača. Primenu ima pri farbanju građevinske stolarije, ograda, kapija, metalnih konstrukcija i sličnih površina."></a>
+            <p class="proizvodi-text">SINTEX ULJANA BOJA ZA DRVO I METAL<br><br><br><a id="boje-text-span-sintex" class="boje-text-span" href="#popup-ton-karta">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Na bazi alkidnih smola<br>Za enterijer i eksterijer<br>200ml, 750ml, 3l, 20kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/rapid brzosusiva antikorozivna boja za metal irkom.png" alt="RAPID je brzosušiva osnovna antikorozivna boja koja se koristi za zaštitu metala. Sastoji se od modifikovanih alkidnih veziva, antikorozivnih sredstava, aditiva, pigmenata i rastvarača.  Može se koristiti za zaštitu čeličnih konstrukcija, poljoprivrednih i građevinskih mašina, karoserije automobila i slično. Koristi se kao osnovni premaz za brzosušive boje kao i za sintetički emajl. Premaz se odlikuje velikom tvrdoćom, adhezijom, elastičnošću i zaštitom od korozije. Rapid je dostupan u crvenoj i sivoj boji. Boja je posebno pogodna kod varenja, jer ne dolazi do gorenja boje."></a>
+            <p class="proizvodi-text">RAPID BRZOSUŠIVA OSNOVNA ANTIKOROZIVNA BOJA ZA METAL<br><br><a id="boje-text-span-rapid" class="boje-text-span" href="#popup-ton-karta">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Za enterijer i eksterijer<br>Brzosušiva baza<br>Boja ne gori prilikom varenja<br>0,9l, 25kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/pyrostal vatrostalna boja za metal irkom.png" alt="PYROSTAL je termostabilni premaz za temperaturu do 600°C. Izrađen je na bazi kumaron-inden smola, Al praha i rastvarača. Sadrži toluen. Koristi se u industriji trajno-žarećih elemenata, kotlova, čunkova, šporeta, za radijatore, dalekovode, izduvne lonce na automobilima. Dostupna je u sivoj i crnoj boji."></a>
+            <p class="proizvodi-text">PYROSTAL VATROSTALNA BOJA ZA METAL<br><br><br><a id="boje-text-span-pyrostal" class="boje-text-span" href="#popup-ton-karta">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Na bazi alkidnih smola<br>0,75l, 20kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/mehano autoreparatur irkom.png" alt="MEHANO boja se koristi kao završna boja u sistemu za repariranje putničkih automobila, kamiona, traktora i drugih metalnih površina u metalnoj industriji. Pripada grupi proizvoda najvišeg kvaliteta. Film se odlikuje visokim sjajem i pokrivnom moći, izvanrednim razlivanjem i mehaničkim svojstvima: tvrdoćom, elastičnošću, prijanjanjem i otpornošću na atmosferilije u svim klimatskim uslovima primene."></a>
+            <p class="proizvodi-text">MEHANO AUTOREPARATUR<br><br><br><a id="boje-text-span-mehano" class="boje-text-span" href="#popup-ton-karta">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Na bazi alkidnih smola<br>UV otporan<br>Visok sjaj površine<br>Postojana i mehanički otporna boja<br>750ml, 20kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/radijator lak irkom.png" alt="RADIJATOR LAK se koristi za dekorativnu zaštitu radijatora i sličnih metalnih površina. Izrađen je na bazi alkidnih smola, organskih i neorganskih pigmenata, rastvarača i aditiva za otpornost na temperaturu."></a>
+            <p class="proizvodi-text">ULJANA BOJA ZA RADIJATORE<br></p><p class="proizvodi-text-opis">Na bazi alkidnih smola<br>0,75l, 20kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/aqualin boja za radijatore na vodenoj bazi irkom.png" alt="AQUAlin vodena boja za radijatore je dekorativni premaz koji se odlikuje izuzetnom pokrivnom moći, elastičnošću, tvrdoćom i otpornošću na toplotu. Tokom vremena ovaj premaz ne žuti. Sadrži aditive protiv korozije i može se direktno nanositi na korodirane radijatore u ciju reparacije starih premaza."></a>
+            <p class="proizvodi-text">AQUALIN BOJA ZA RADIJATORE<br></p><p class="proizvodi-text-opis">Na bazi akrilnih smola(vodena baza)<br>Ne sme smrznuti<br>Elastični premaz<br>ECO<br>Brzo se suši<br>700ml</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/aqualin vodeni emajl za drvo i metal irkom.png" alt="AQUALIN EMAJL završni je dekorativni premaz izrađen na bazi specijalnih vodenih disperzija akrilnih smola, pigmenata i aditiva. Odlikuje se izuzetnom pokrivnom moći, elastičnošću, tvrdoćom i otpornošću na atmosferske uslove. Karakteristike koje odlikuju ovaj proizvod omogućavaju da ima široku primenu pri farbanju nameštaja, građevinske stolarije, kao i svih predmeta od drveta u enterijeru i eksterijeru. Nema neprijatnih mirisa prilikom farbanja, a nanet premaz se brzo suši. Proizvod je potpuno zdravstveno ispravan, proizveden na ekološkim principima. Bezbedan je za bojenje dečijih igračaka kao i predmeta koji su u kontaktu sa hranom. Pravi se u nekoliko nijansi, dok se bela nijansa može naći u sjaju ili u satenskom sjaju (polu-mat)."></a>
+            <p class="proizvodi-text">AQUALIN EMAJL ZAVRŠNI<br><br><a id="boje-text-span-aqualin-emajl" class="boje-text-span" href="#popup-ton-karta">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">UV otporan<br>Na bazi akrilnih smola(vodena baza)<br>Ne sme smrznuti<br>Bezbedno za bojenje igračaka<br>Bezbedno za predmete u kontaktu sa hranom<br>700ml</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/antique zast premaz na koroziju irkom.png" alt="ANTIQUE je dekorativni zaštitni premaz za metal, sa dodatkom sitnih metalnih opiljaka, koji se nanosi direktno na koroziju. Izrađen je na bazi alkidnih smola, organskih i neorganskih pigmenata i rastvarača i specijalnih aditiva koji omogućavaju nanošenje direktno na rđu. Koristi se za zaštitu metala, a poseban izgled daje ogradama od kovanog gvožđa. Namenjen je za unutrašnju i spoljašnu upotrebu."></a>
+            <p class="proizvodi-text">ANTIQUE DIREKTNO NA KOROZIJU<br><br><a id="boje-text-span-antique" class="boje-text-span" href="#popup-ton-karta">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Na bazi alkidnih smola<br>Sadrži metalne opiljke<br>Direktno na rđu<br>Za enterijer i eksterijer<br>0,75l, 20kg</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/irkolin gold irkom.png" alt="IRKOLIN GOLD je debeloslojni lazurni premaz sa voskom i UV zaštitom. Izrađen je na bazi sušivih alkidnih smola, UV otpornih pigmenata, specijalnih aditiva i odgovarajućih rastvarača. Koristi se za oplemenjivanje i dekorativnu zaštitu drveta u enterijeru i eksterijeru. Posebno je pogodan za tretiranje drveta izloženog ekstremnim atmosferskim uticajima, kao što su jako sunce, velika vlaga, udari kiše, vetra, snega i sl.
+                Visok sadržaj voska puni pore drveta dajući mu dugotrajnost, otpornost, elastičnost i svilenkast sjaj, pri čemu struktura drveta ostaje jasno vidljiva. Nanet na drvo, Irkolin Gold se ponaša isto kao i drvo kada je hladno skuplja se, a kada je toplo on se širi, što dovodi do toga da premaz prati kretanje drveta. UV zaštita obezbeđuje da boja ne menja nijansu, ne puca i ne ljušti se, a drvo ostaje potpuno zaštićeno duži vremenski period. Irkomova laboratorija je napravila lazuru koja pored voska poseduje komponente koje omogućavaju produženi vek trajanja premaza kroz regeneraciju premaza nakon svake zime dajući drvetu izgled sveže farbanog. Pored toga, Irkolin Gold je potpuno vodootporan i samim tim ne dozvoljava prodor vlage u drvo."></a>
+            <p class="proizvodi-text">IRKOLIN GOLD LAZURA SA VOSKOM<br><br><a id="boje-text-span-lazura" class="boje-text-span" href="#popup-ton-karta">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">UV otporan i vodoodbojan<br>Regeneriše se na sunčevom svetlu<br>Elastični premaz<br>Za ekstremne vremenske uslove<br>Ne razređuje se<br>0,75l, 3l, 10l</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/irkolin classic irkom.png" alt="IRKOLIN CLASSIC je tankoslojni lazurni transparentni premaz bez laka koji se koristi za dekoraciju i intenzivnu dubinsku zaštitu drveta u enterijeru i eksterijeru (prozori, vrata, ograde, lamperija). Štiti drvo od vode i atmosferskih uticaja i daje mu željene estetske karakteristike. Zbog velike količine pigmenta koji sadrži, izuzetan je za nijansiranje drveta, a tečni sadržaj mu omogućava duboko prodiranje u strukturu drveta. Može se koristiti samostalno, preporučuje se u enterijeru 1-2 sloja, u eksterijeru 2-3 sloja ili kao podloga za Irkolin Gold (u tom slučaju nanosi se u samo jednom sloju u istoj nijansi kao i Irkolin Gold). Ukoliko želite nijansirati drvo može se premazati i u više slojeva od preporučenog, svaki novi naneti sloj dovešće do intenziviranja nijanse uz minimalan gubitak transparentnosti. Nanosi se četkom, krznenim valjkom ili špricem."></a>
+            <p class="proizvodi-text">IRKOLIN CLASSIC LAZURA<br><br><a id="boje-text-span-lazura" class="boje-text-span" href="#popup-ton-karta">TON KARTA<i class="fa-solid fa-palette" style="display: inline;margin-left: 4px;"></i></a></p><p class="proizvodi-text-opis">Mat efekat<br>Na bazi alkidnih smola<br>UV otporan<br>Prirodan izgled drveta<br>Za enterijer i eksterijer<br>0,75l, 3l</p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/" alt=""></a>
+            <p class="proizvodi-text"></p><p class="proizvodi-text-opis"></p></article>
+
+            <article class="proizvodi-content" style="height: 50%; display: inline-block;"><a href="#popup"><img src="img/boje/" alt=""></a>
+            <p class="proizvodi-text"></p><p class="proizvodi-text-opis"></p></article>
+
+        </div>
+    </section>
+
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <a href="#" class="close-popup" style="text-decoration: none;">&times;</a>
+            <img class="popup-img" src="" alt="">
+            <p class="popup-text">
+                
+            </p>
+        </div>
+    </div>
+
+
+    <div id="popup-ton-karta" class="popup-ton-karta">
+        <div class="popup-content">
+            <a href="#" id="close-btn" class="close-popup" style="text-decoration: none;">&times;</a>
+            
+        </div>
+    </div>
+
+
+    <div id="ton-karta-container-3u1" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">3u1 ton karta</h3>
+        <div class="ton-karta-img" style="background-color: #ffcb03;">
+            <p class="ton-karta-text">RAL 1018 ŽUTA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #b12122;">
+            <p class="ton-karta-text">RAL 3001 CRVENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #7f2423;">
+            <p class="ton-karta-text">RAL 3011 TRULA VIŠNJA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #da1707;">
+            <p class="ton-karta-text">RAL 3020 IMT CRVENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #012d52;">
+            <p class="ton-karta-text">RAL 5013 TAMNO PLAVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #005b8f;">
+            <p class="ton-karta-text">RAL 5017 SVETLO PLAVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #01581f;">
+            <p class="ton-karta-text">RAL 6002 SVETLO ZELENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #00402f;">
+            <p class="ton-karta-text">RAL 6005 TAMNO ZELENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #4e595d;">
+            <p class="ton-karta-text">RAL 7011 IMT SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #b1b0aa;">
+            <p class="ton-karta-text">RAL 7038 SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #6B2B1F;">
+            <p class="ton-karta-text">RAL 8015 SVETLO BRAON</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #552619;">
+            <p class="ton-karta-text">RAL 8016 TAMNO BRAON</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #070709;">
+            <p class="ton-karta-text">RAL 9005 CRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #000000;">
+            <p class="ton-karta-text">RAL 9005 MAT CRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #f2f0ea;">
+            <p class="ton-karta-text">RAL 9016 BELA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #f2f0ea;">
+            <p class="ton-karta-text">RAL 9016 BELA MAT</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #343d3f;">
+            <p class="ton-karta-text">RAL 7016 ANTRACIT</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #f97011;">
+            <p class="ton-karta-text">RAL 2008 NARANDŽASTA</p>
+        </div>
+        <div class="ton-karta-img" style="background-image: radial-gradient(#efca75,#a27016);">
+            <p class="ton-karta-text">ZLATNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-image: radial-gradient(#b2b2b2,#656565);">
+            <p class="ton-karta-text">RAL 9006 SREBRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-image: radial-gradient(#cba372,#915d2e);">
+            <p class="ton-karta-text">BAKAR</p>
+        </div>
+    </div>
+
+
+    <div id="ton-karta-container-temeljna" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">Temeljna boja ton karta</h3>
+        <div class="ton-karta-img" style="background-color: #fefefe;">
+            <p class="ton-karta-text">BELA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #adabad;">
+            <p class="ton-karta-text">SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #262523;">
+            <p class="ton-karta-text">CRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #b42528;">
+            <p class="ton-karta-text">CRVENA</p>
+        </div>
+    </div>
+
+
+    <div id="ton-karta-container-nitro-emajl" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">Nitro emajl ton karta</h3>
+        <div class="ton-karta-img" style="background-color: #fefefe;">
+            <p class="ton-karta-text">BELA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #faeed5;">
+            <p class="ton-karta-text">SLONOVA KOST</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #f7df22;">
+            <p class="ton-karta-text">ŽUTA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #d06829;">
+            <p class="ton-karta-text">ORANŽ</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #b42528;">
+            <p class="ton-karta-text">CRVENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #6b282c;">
+            <p class="ton-karta-text">TRULA VIŠNJA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #2e3258;">
+            <p class="ton-karta-text">TAMNO PLAVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #2b60a7;">
+            <p class="ton-karta-text">SVETLO PLAVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #334628;">
+            <p class="ton-karta-text">TAMNO ZELENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #642826;">
+            <p class="ton-karta-text">SVETLO BRAON</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #462f1e;">
+            <p class="ton-karta-text">TAMNO BRAON</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #c4973d;">
+            <p class="ton-karta-text">OKER</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #bebcbe;">
+            <p class="ton-karta-text">SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-image: radial-gradient(#b6b6b6,#626262);">
+            <p class="ton-karta-text">SREBRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #fefefe;">
+            <p class="ton-karta-text">BELA MAT</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #393939;">
+            <p class="ton-karta-text">ANTRACIT</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #070709;">
+            <p class="ton-karta-text">CRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #070709;">
+            <p class="ton-karta-text">CRNA MAT</p>
+        </div>
+    </div>
+
+
+    <div id="ton-karta-container-sintex" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">Sintex ton karta</h3>
+        <div class="ton-karta-img" style="background-color: #fefefe;">
+            <p class="ton-karta-text">BELA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #faeed5;">
+            <p class="ton-karta-text">SLONOVA KOST</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #f7df22;">
+            <p class="ton-karta-text">ŽUTA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #d06829;">
+            <p class="ton-karta-text">ORANŽ</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #b42528;">
+            <p class="ton-karta-text">CRVENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #6b282c;">
+            <p class="ton-karta-text">TRULA VIŠNJA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #2e3258;">
+            <p class="ton-karta-text">TAMNO PLAVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #2b60a7;">
+            <p class="ton-karta-text">SVETLO PLAVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #486b38;">
+            <p class="ton-karta-text">SVETLO ZELENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #334628;">
+            <p class="ton-karta-text">TAMNO ZELENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #642826;">
+            <p class="ton-karta-text">SVETLO BRAON</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #462f1e;">
+            <p class="ton-karta-text">TAMNO BRAON</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #c4973d;">
+            <p class="ton-karta-text">OKER</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #bebcbe;">
+            <p class="ton-karta-text">SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-image: radial-gradient(#b6b6b6,#626262);">
+            <p class="ton-karta-text">SREBRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-image: radial-gradient(#f4d379,#ab7920);">
+            <p class="ton-karta-text">ZLATNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-image: radial-gradient(#d0a878,#8f5a2c);">
+            <p class="ton-karta-text">BAKAR</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #070709;">
+            <p class="ton-karta-text">CRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #070709;">
+            <p class="ton-karta-text">CRNA MAT</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #fefefe;">
+            <p class="ton-karta-text">BELA MAT</p>
+        </div>
+    </div>
+
+
+    <div id="ton-karta-container-rapid" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">Rapid ton karta</h3>
+        <div class="ton-karta-img" style="background-color: #adabad;">
+            <p class="ton-karta-text">SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #b42528;">
+            <p class="ton-karta-text">CRVENA</p>
+        </div>
+    </div>
+
+    <div id="ton-karta-container-pyrostal" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">Pyrostal ton karta</h3>
+        <div class="ton-karta-img" style="background-image: radial-gradient(#b6b6b6,#626262);">
+            <p class="ton-karta-text">SREBRNA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #070709;">
+            <p class="ton-karta-text">CRNA</p>
+        </div>
+    </div>
+
+    <div id="ton-karta-container-mehano" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">Mehano ton karta</h3>
+        <div class="ton-karta-img" style="background-color: #023855">
+            <p class="ton-karta-text">RAKOVICA PLAVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #1a1917;">
+            <p class="ton-karta-text">CRNA RAL 7021</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #adabad">
+            <p class="ton-karta-text">SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #009672;">
+            <p class="ton-karta-text">ZELENA JOHN DEER</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #ffcd00">
+            <p class="ton-karta-text">KATERPILAR ŽUTA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #fe8729;">
+            <p class="ton-karta-text">ORANŽ</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #737477">
+            <p class="ton-karta-text">IMT SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #fe2e35;">
+            <p class="ton-karta-text">IMT CRVENA</p>
+        </div>
+    </div>
+
+    <div id="ton-karta-container-aqualin-emajl" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">Aqualin emajl ton karta</h3>
+        <div class="ton-karta-img" style="background-color: #fefefe;">
+            <p class="ton-karta-text">BELA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #f6f6f6;">
+            <p class="ton-karta-text">SATEN BELA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #f7df22;">
+            <p class="ton-karta-text">ŽUTA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #0073ff;">
+            <p class="ton-karta-text">PLAVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #b42528;">
+            <p class="ton-karta-text">CRVENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #18d600;">
+            <p class="ton-karta-text">ZELENA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #462f1e;">
+            <p class="ton-karta-text">TAMNO BRAON</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #bebcbe;">
+            <p class="ton-karta-text">SIVA</p>
+        </div>
+        <div class="ton-karta-img" style="background-color: #070709;">
+            <p class="ton-karta-text">CRNA</p>
+        </div>
+    </div>
+
+    <div id="ton-karta-container-antique" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;">Antique ton karta</h3>
+        <div style="height: 130px;position: relative;">
+        <img src="img/boje/antique crna.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">CRNA</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+        <img src="img/boje/antique siva.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">SIVA</span>
+        </div>
+    </div>
+
+    <div id="ton-karta-container-lazura" class="ton-karta-container">
+        <h3 style="display: inline-block;
+        position: absolute;
+        top: -15%;"></h3>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/01_bezbojni.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">01 BEZBOJNI</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/02_bor.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">02 BOR</span>
+            </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/03_tik.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">03 TIK</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/04_orah.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">04 ORAH</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/05_ebonos.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">05 EBONOS</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/07_mahagoni.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">07 MAHAGONI</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/08_hrast.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">08 HRAST</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/09_palisander.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">09 PALISANDER</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/10_kesten.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">10 KESTEN</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/50_crveni.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">50 CRVENI</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/52_zeleni.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">52 ZELENI</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/53_zuti.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">53 ŽUTI</span>
+        </div>
+        <div style="height: 130px;position: relative;">
+            <img src="img/boje/55_beli.jpg" alt="" class="ton-karta-img">
+            <span style="position: absolute; bottom: 0;" class="ton-karta-text">55 BELI</span>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/d692da4b14.js" crossorigin="anonymous"></script>
+    <script src="js/scriptProizvodi.js"></script>
+</body>
+</html>

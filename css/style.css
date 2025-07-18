@@ -129,12 +129,6 @@ a:hover {
     transform: translateX(145%);
 }
 
-.navbar-checkbox:not(:checked) ~ .navbar-nohover {
-    transform: translateX(-145%);
-    opacity: 0;
-    visibility: collapse;
-}
-
 .navbar-nohover {
     visibility: hidden;
     opacity: 0;
